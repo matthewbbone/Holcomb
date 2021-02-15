@@ -1,0 +1,158 @@
+---
+title: "Keyword Analysis"
+author: "Matthew Bone"
+date: "2/14/2021"
+output: 
+  html_document:
+    fig_height: 3
+    fig_width: 5
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+  word_document:
+    fig_height: 3
+    fig_width: 5
+---
+
+```{r, setup, include=FALSE}
+library(mosaic)
+library(readr)
+library(ggplot2)
+library(knitr)
+library(wordcloud)
+library(RColorBrewer)
+library(wordcloud2)
+library(tidytext)
+set.seed(2)
+
+knitr::opts_chunk$set(
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+```
+
+```{r, include=FALSE}
+keywords1 <- read_csv('keywords.csv') %>% select(-X1)
+keywords2 <- read_csv('keywords2.csv') %>% select(-X1)
+keywords <- rbind(keywords1, keywords2)
+t1 <- kable(sample(keywords, 5) %>% select(-'orig.id'), format = 'markdown')
+```
+
+```{r}
+t1
+```
+
+```{r, include = FALSE}
+flatten <- function(x) {
+  strsplit(x, ', ')
+}
+
+flatten <- Vectorize(flatten)
+
+key_cloud <- function(df) {
+  
+  flat_keys <- df %>%
+    mutate(flat_keys = flatten(keywords)) %>%
+    select(flat_keys)
+  
+  words <- unlist(flat_keys$flat_keys)
+  
+  keylist <- data.frame(words) %>%
+    mutate(words = gsub('( |-)','',words),
+          words = tolower(words)) %>%
+    group_by(words) %>%
+    summarize(unscaled_freq = n())%>%
+    mutate(freq = ceiling(unscaled_freq^(.8))) %>%
+    arrange(-freq) %>%
+    select(words, freq, unscaled_freq)
+  
+  return(wordcloud2(keylist, 
+            color = "random-light", 
+            backgroundColor = "black", 
+            size = .8, 
+            shape = 'rectangle',
+            minRotation = 0, maxRotation = 0))
+}
+
+wc2020 <- keywords %>%
+  key_cloud()
+
+wcPC20 <- keywords %>%
+  filter(journal == "Political Communication") %>%
+  key_cloud()
+
+wcJ20 <- keywords %>%
+  filter(journal == "Journalism") %>%
+  key_cloud()
+
+wcJS20 <- keywords %>%
+  filter(journal == "Journalism Studies") %>%
+  key_cloud()
+
+wcDJ20 <- keywords %>%
+  filter(journal == "Digital Journalism") %>%
+  key_cloud()
+
+wcJMC20 <- keywords %>%
+  filter(journal == "Journalism & Mass Communication Quarterly") %>%
+  key_cloud()
+
+wcIJPP20 <- keywords %>%
+  filter(journal == "The International Journal of Press/Politics") %>%
+  key_cloud()
+
+wcNMS20 <- keywords %>%
+  filter(journal == "New Media & Society") %>%
+  key_cloud()
+```
+
+## 2020-2021
+
+```{r, echo=FALSE}
+wc2020
+```
+
+## Political Communication
+
+```{r, echo=FALSE}
+wcPC20
+```
+
+## Journalism
+
+```{r, echo=FALSE}
+wcJ20
+```
+
+## Journalism Studies
+
+```{r, echo=FALSE}
+wcJS20
+```
+
+## Digital Journalism
+
+```{r, echo=FALSE}
+wcDJ20
+```
+
+## Journalism & Mass Communication Quarterly
+
+```{r, echo=FALSE}
+wcJMC20
+```
+
+## The International Journal of Press/Politics
+
+```{r, echo=FALSE}
+wcIJPP20
+```
+
+## New Media & Society
+
+```{r, echo=FALSE}
+wcNMS20
+```
+
+
+
+

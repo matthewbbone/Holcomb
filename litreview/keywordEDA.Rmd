@@ -25,6 +25,7 @@ library(wordcloud2)
 library(tidytext)
 library(htmlwidgets)
 library(webshot)
+library(kableExtra)
 source("litrev_funcs.R")
 set.seed(3)
 
@@ -125,6 +126,13 @@ keylist %>%
   head(20) %>%
   gf_col(reorder(words, count) ~ count) %>%
   gf_labs(y = 'keyword')
+```
+```{r}
+keylist %>%
+  arrange(-count) %>%
+  filter(count > 1) %>%
+  kable(format = 'markdown') %>%
+  save_kable(file = 'keyword_list.txt')
 ```
 
 </center>

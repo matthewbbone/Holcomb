@@ -1,0 +1,106 @@
+---
+title: "NJ News Exploratory Data Analysis"
+author: "Matthew Bone"
+date: "2/21/21"
+output: 
+  html_document:
+    fig_height: 3
+    fig_width: 5
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+  word_document:
+    fig_height: 3
+    fig_width: 5
+---
+
+```{r, setup, include=FALSE}
+library(mosaic)
+library(readr)
+library(tidyverse)
+library(ggformula)
+library(stringr)
+
+knitr::opts_chunk$set(
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+```
+
+This document is an exploratory data analysis for the New Jersey News Network data. The njnodes.csv and njedges.csv dataset where extracted from the 12706-gephi.gexf.xml file using gephi. 
+
+Population Data: https://www.nj.gov/labor/lpa/dmograph/est/est_index.html
+
+```{r, include=FALSE}
+nodes <- read_csv('njnodes.csv') %>%
+  mutate()
+
+url_end <- function(x) {
+  str_extract(x, '\\.[a-zA-Z]*$')
+}
+
+url_ends <- paste(unique(unlist(lapply(nodes['Label'], url_end))), collapse = "|")
+
+edges <- read_csv('njedges.csv')
+
+local <- read_csv('localnews.csv') %>%
+  mutate(website = gsub('https://', '', website),
+         website = gsub('http://','', website),
+         website = gsub('www.', '', website),
+         website = gsub('/.*$', '', website),
+         municipal = tolower(municipal),
+         municipal = gsub('(-| )', '', municipal))
+
+census <- read_csv('njcensus.csv') %>%
+  mutate(municipal = gsub('city city', 'city', tolower(municipal)),
+         municipal = gsub('(-| )', '', municipal),
+         county = gsub(' ', '', county),
+         county = tolower(county))
+
+voters <- read_csv('voters2019.csv') %>%
+  mutate(county = gsub(' ', '', tolower(county)),
+         municipal = gsub('( twp| city| town| boro| village| township| borough|-| )', '', tolower(municipal)))
+```
+
+```{r, include=FALSE}
+county_dict <- unlist(census['county'])
+names(county_dict) <- unlist(census['municipal'])
+
+match_county <- function(x) {
+  county_dict[x]
+}
+
+match_county <- Vectorize(match_county)
+
+local %>%
+  mutate(Label = website,
+         county = gsub('(\\(|\\))', '', str_extract(municipal, '\\(.*\\)')),
+         municipal = gsub('\\(.*\\)', '', municipal),
+         county = if_else(is.na(county), match_county(municipal), county)) %>%
+  left_join(nodes, by='Label') %>%
+  left_join(census, by = c('municipal', 'county')) %>%
+  mutate(county = gsub('county', '', county),
+         municipal = gsub('(township|city|borough|-|town|village)', '', municipal)) %>%
+  left_join(voters, by=c('municipal', 'county')) %>%
+  select(county, municipal, Degree, registered) %>%
+  View()
+
+```
+
+```{r}
+cmb_dat %>%
+  select(county, municipal, `weighted indegree`, c2019) %>%
+  group_by(county, municipal) %>%
+  mutate(muni_degree = sum(`weighted indegree`, na.rm=T)) %>%
+  select(-`weighted indegree`) %>%
+  unique() %>%
+  ungroup() %>%
+  group_by(county) %>%
+  summarise(population = sum(c2019), 
+            info_density = sum(muni_degree) / sum(c2019)) %>%
+  arrange(-info_density)
+```
+
+
+
+
+

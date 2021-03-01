@@ -1,7 +1,7 @@
 ---
 title: "Keyword Analysis"
 author: "Matthew Bone"
-date: "2/14/2021"
+date: "2/27/2021"
 output: 
   html_document:
     fig_height: 4
@@ -27,82 +27,90 @@ library(htmlwidgets)
 library(webshot)
 library(kableExtra)
 source("litrev_funcs.R")
-set.seed(3)
+set.seed(4)
 
 knitr::opts_chunk$set(
   tidy=FALSE,     # display code as typed
   size="small")   # slightly smaller font for code
 ```
 
-This report is an exploratory data analysis of the keywords for all articles published within 2019-2021 (as of 2/14/21) from the journals Political Communication, Journalism, Journalism Studies, Digital Journalism, Journalism & Mass Media, International Journal of Press & Politics, and New Media & Society (Journal of Communication was excluded because it is published by Oxford Academic which doesn't have keywords on their journal homepages). The keywords and some relevant article info were scraped from [Taylor and Francis](https://taylorandfrancis.com/) and [Sagepub](https://journals.sagepub.com/). A sample of the data set is shown below:
+This report is an exploratory data analysis of the keywords for all articles published between 2018-2021 (as of 2/14/21) from the journals Political Communication, Journalism, Journalism Studies, Digital Journalism, Journalism & Mass Media, International Journal of Press & Politics, and New Media & Society (Journal of Communication was excluded because it is published by Oxford Academic which doesn't have keywords on their journal homepages). The keywords and some relevant article info were scraped from [Taylor and Francis](https://taylorandfrancis.com/) and [Sagepub](https://journals.sagepub.com/) using the python package Beautiful Soup 4. A sample of the data set is shown below:
+
+*Titles may not be complete
+
 
 ```{r, include=FALSE}
-keywords1 <- read_csv('keywords.csv') %>% select(-X1)
-keywords2 <- read_csv('keywords2.csv') %>% select(-X1)
-keywords <- rbind(keywords1, keywords2) %>%
+keywords_tf <- read_csv('keywords.csv') %>% select(-X1)
+keywords_sage<- read_csv('keywords2.csv') %>% select(-X1)
+keywords_tf_18 <- read_csv('keywords_2018.csv') %>% select(-X1)
+keywords_sage_18 <- read_csv('keywords2_2018.csv') %>% select(-X1)
+
+keywords <- rbind(keywords_tf, keywords_sage, keywords_tf_18, keywords_sage_18) %>%
   unique()
+
+keywords18 <- keywords %>%
+  filter(published == 2018)
 keywords19 <- keywords %>%
   filter(published == 2019)
 keywords20 <- keywords %>%
-  filter(published > 2019)
+  filter(published == 2020)
+keywords21 <- keywords %>%
+  filter(published == 2021)
+
 t1 <- kable(sample(keywords, 5) %>% select(-'orig.id'), format = 'markdown')
 ```
+
+```{r, include=FALSE}
+jc18 <- journal_comp(keywords18, 2018)
+jc19 <- journal_comp(keywords19, 2019)
+jc20 <- journal_comp(keywords20, 2020)
+jc21 <- journal_comp(keywords21, 2021)
+```
+
+```{r, include=FALSE}
+jc18
+jc19
+jc20
+jc21
+```
+
 
 ```{r, echo=FALSE}
 t1
 ```
 
 ```{r, include=FALSE}
+keylist <- key_list(keywords)
+keylist18 <- key_list(keywords18)
+keylist19 <- key_list(keywords19)
+keylist20 <- key_list(keywords20)
+keylist21 <- key_list(keywords21)
 
-flat_keys <- keywords %>%
-  mutate(flat_keys = flatten(keywords)) %>%
-  select(flat_keys)
-flat_keys19 <- keywords19 %>%
-  mutate(flat_keys = flatten(keywords)) %>%
-  select(flat_keys)
-flat_keys20 <- keywords20 %>%
-  mutate(flat_keys = flatten(keywords)) %>%
-  select(flat_keys)
-  
-words <- key_clean(unlist(flat_keys$flat_keys))
-words19 <- key_clean(unlist(flat_keys19$flat_keys))
-words20 <- key_clean(unlist(flat_keys20$flat_keys))
-
-article_count <- c(nrow(keywords19), nrow(keywords20), nrow(keywords))
-keyword_count <- c(length(words19), length(words20), length(words))
-unique_keyword_count <- c(length(unique(words19)), length(unique(words20)), length(unique(words)))
+article_count <- c(nrow(keywords18), nrow(keywords19), nrow(keywords20),  nrow(keywords21),nrow(keywords))
+keyword_count <- c(sum(keylist18$count), sum(keylist19$count), sum(keylist20$count), sum(keylist21$count), sum(keylist$count))
+unique_keyword_count <- c(nrow(keylist18), nrow(keylist19), nrow(keylist20), nrow(keylist21), nrow(keylist))
 
 quick_nums <- kable(data.frame(article_count, 
                                keyword_count, 
                                unique_keyword_count, 
-                               row.names = c('2019', '2020-2021', 'total')), 
+                               row.names = c('2018', '2019', '2020', '2021', 'total')), 
                     format = 'markdown')
 
-keylist <- data.frame(words) %>%
-  group_by(words) %>%
-  summarize(count = n())
-keylist19 <- data.frame(words19) %>%
-  group_by(words19) %>%
-  summarize(count = n())
-keylist20 <- data.frame(words20) %>%
-  group_by(words20) %>%
-  summarize(count = n())
-
 wc_dist <- keylist %>%
-  gf_density(~count, fill = 'blue') %>%
+  gf_histogram(~count, fill = 'blue', bins = 200) %>%
   gf_labs(x = 'word counts') %>%
   gf_theme()
-
 ```
 
 ## Quick Numbers:
+
+Here you can see that there are significantly more articles in 2018 than there were in 2019 or 2020. This is primarily because New Media & Society began publishing significantly less articles per issue after 2018.
 
 ```{r, echo=FALSE}
 quick_nums
 ```
 
-
-### Distribution of Word Counts
+### Distribution of Word Counts for all Years
 
 The majority of keywords only appear once. However, there are a few clear outliers that appear frequently in this dataset. 
 
@@ -114,51 +122,14 @@ wc_dist
 
 </center>
 
-### 20 Most Frequent Keywords
+## Keyword Word Cloud for All Years
 
-It's clear that 'social media' and 'journalism' are by far the most used keyword. Additionally, we can see that many popular keywords reflect the increasingly digital landscape and its importance for politics (e.g. 'twitter', 'political communication', 'fakenews')
-
-<center>
-
-```{r, echo=FALSE}
-keylist %>%
-  arrange(-count) %>%
-  head(20) %>%
-  gf_col(reorder(words, count) ~ count) %>%
-  gf_labs(y = 'keyword')
-```
-```{r}
-keylist %>%
-  arrange(-count) %>%
-  filter(count > 1) %>%
-  kable(format = 'markdown') %>%
-  save_kable(file = 'keyword_list.txt')
-```
-
-</center>
-
-## Keyword Word Cloud
-
-```{r, include = FALSE}
-wc <- keywords %>%
-  key_cloud()
-
-wc19 <- keywords19 %>%
-  key_cloud()
-
-wc20 <- keywords20 %>%
-  key_cloud()
-```
-
-```{r, include = FALSE}
-saveWidget(wc, 'wc.html', selfcontained = F)
-webshot("wc.html","wc.png",vwidth = 1000, vheight = 900, delay =10)
-
-saveWidget(wc19, 'wc19.html', selfcontained = F)
-webshot("wc19.html","wc19.png",vwidth = 1000, vheight = 900, delay =10)
-
-saveWidget(wc20, 'wc20.html', selfcontained = F)
-webshot("wc20.html","wc20.png",vwidth = 1000, vheight = 900, delay =10)
+```{r, include=FALSE}
+#word_cloud(keywords, '')
+#word_cloud(keywords18, 2018)
+#word_cloud(keywords19, 2019)
+#word_cloud(keywords20, 2020)
+#word_cloud(keywords21, 2021)
 ```
 
 <center>
@@ -167,37 +138,137 @@ webshot("wc20.html","wc20.png",vwidth = 1000, vheight = 900, delay =10)
 
 </center>
 
-## Keywords w/ Biggest Change between 2019 and 2020/21
+## List of all Keywords with Ten or More Occurences in the Total Dataset
+
+*count*: the number of times the keywords appears in the dataset
+
+*perc*: the percent of articles that the keyword is on
 
 ```{r, include=FALSE}
-n_art19 <- nrow(keywords19)
-n_art20 <- nrow(keywords20)
-
-key_dense19<- keylist19 %>%
-  mutate(words = words19,
-         density19 = count / n_art19) %>%
-  select(words, density19)
-
-key_dense20 <- keylist20 %>%
-  mutate(words = words20,
-         density20 = count / n_art20) %>%
-  select(words, density20)
-
-change_plot <- key_dense19 %>%
-  left_join(key_dense20) %>%
-  mutate(density_change = (density20 - density19) * 100,
-         abs_change = abs(density_change),
-         category = if_else(density_change > 0, 1, 0)) %>%
-  arrange(-abs_change) %>%
-  head(30) %>%
-  select(words, density_change, category) %>%
-  gf_col(reorder(words, density_change)~density_change, fill = ~factor(category), show.legend = F) %>%
-  gf_labs(x = 'Change in % of Articles w/ keyword from 2019 to 2020/2021', 
-          y = 'keyword')
-  
+all5 <- keylist %>%
+  mutate(perc = count / nrow(keywords)) %>%
+  arrange(-count) %>%
+  filter(count >= 10) %>%
+  kable(format = 'markdown')
 ```
 
-Perhaps the most interesting information in this plot is the significant change in focus between the two most popular keywords 'social media' and 'journalism'. Social media was used as a keyword for over 5% more articles in 2020/21 than in 2019, while journalism was used as a keyword in about 2.5% less articles. 
+```{r, echo=FALSE}
+all5
+```
+
+## 20 Most Frequent Keywords by Year
+
+It's clear that 'social media' and 'journalism' are by far the most used keyword. Additionally, we can see that many popular keywords reflect the increasingly digital landscape and its importance for politics (e.g. 'twitter', 'political communication', 'fakenews')
+
+These charts all show the 20 most popular keywords for each year by the number of times they appear on an article.
+
+<center>
+
+```{r, include=FALSE}
+mf18 <- most_frequent(keylist18, 2018, 20)
+mf19 <- most_frequent(keylist19, 2019, 20)
+mf20 <- most_frequent(keylist20, 2020, 20)
+mf21 <- most_frequent(keylist21, 2021, 20)
+```
+
+```{r, echo=FALSE}
+mf18
+mf19
+mf20
+mf21
+```
+
+
+</center>
+
+## Keywords that Increased in frequency from 2018 to 2019 and 2019 to 2020
+
+The most interesting value here (and what the list is ordered by) is *freq_incr* which is the factor by which a keywords frequency increased from 2018 to 2020. This is an indicator of increasing popularity and may help predict what will be popular in 2021.
+
+*count*: these are the count of articles with this keyword for each respective year
+
+*perc*: these are teh percent of articles with this keyword for each respective year
+
+*freq_incr*: this is the factor by which a keywords frequency increased from 2018 to 2020
+
+```{r, include=FALSE}
+k18 <- keylist18 %>%
+  mutate(year = 2018,
+         perc = count / nrow(keywords18))
+
+k19 <- keylist19 %>%
+  mutate(year = 2019,
+         perc = count / nrow(keywords19))
+
+k20 <- keylist20 %>%
+  mutate(year = 2020,
+         perc = count / nrow(keywords20))
+
+k21 <- keylist21 %>%
+  mutate(year = 2021,
+         perc = count / nrow(keywords21))
+
+key_lat <- rbind(k18, k19, k20, k21) %>%
+  arrange(-perc)
+
+kl18 <- keylist18 %>%
+  mutate(count18 = count,
+         perc18 = count / nrow(keywords18)) %>%
+  select(-count)
+
+kl19 <- keylist19 %>%
+  mutate(count19 = count,
+         perc19 = count / nrow(keywords19)) %>%
+  select(-count)
+
+kl20 <- keylist20 %>%
+  mutate(count20 = count,
+         perc20 = count / nrow(keywords20)) %>%
+  select(-count)
+
+kl21 <- keylist21 %>%
+  mutate(count21 = count,
+         perc21 = count / nrow(keywords21)) %>%
+  select(-count)
+
+increase18_20 <- kl18 %>%
+  left_join(kl19) %>%
+  left_join(kl20) %>%
+  left_join(kl21) %>%
+  filter(!is.na(perc20)) %>%
+  filter(perc18 < perc19,
+         perc19 < perc20) %>%
+  mutate(perc18 = round(perc18*100, 2),
+         perc19 = round(perc19*100, 2),
+         perc20 = round(perc20*100, 2),
+         perc21 = round(perc21*100, 2),
+         freq_incr = round(perc20 / perc18, 2))
+
+growers <- increase18_20 %>%
+  arrange(-freq_incr) %>%
+  head(15)
+```
+
+```{r, echo=FALSE}
+increase18_20 %>%
+  arrange(-freq_incr) %>%
+  kable(format = 'markdown')
+```
+
+```{r, include=FALSE}
+change_plot <- key_lat %>%
+  filter(words %in% growers$words,
+         year != 2021) %>%
+  mutate(year = factor(year, levels = c(2020, 2019, 2018)),
+         perc = round(perc * 100, 2)) %>%
+  gf_bar(reorder(words, -perc) ~ perc, 
+         stat = 'identity', 
+         fill = ~year, 
+         position = 'dodge') %>%
+  gf_labs(y = 'keywords', x = '% of articles with keyword')
+```
+
+## The Keywords that Increase Most in Popularity from 2018 to 2020
 
 <center>
 

@@ -1,7 +1,7 @@
 ---
 title: "NJ News Exploratory Data Analysis"
 author: "Matthew Bone"
-date: "2/21/21"
+date: "3/9/2021"
 output: 
   html_document:
     fig_height: 3
@@ -32,7 +32,7 @@ This document is an exploratory data analysis for the New Jersey News Network da
 
 I also compiled a dataset from the [NJ Local News Search](https://newsecosystems.org/njsearch/) of all the websites and their municipalities. I used this to map each node, which represents a news source, to a specific municipality. 
 
-In addition to these datasets, I used census and voting datasets from the [New Jersey Data Book](https://search.njdatabook.rutgers.edu/login.jsp). I was able to merge these to the nodes dataset by using the municipality name and county. The New Jersey Data Book has wide array of data spanning educational, political, economic, and demographic metrics. It should be easy to merge any of this data to the node dataset.
+In addition to these datasets, I used census and voting datasets from the [New Jersey Data Book](https://search.njdatabook.rutgers.edu/login.jsp). I was able to merge these to the nodes dataset by using the municipality name and county. The New Jersey Data Book has a wide array of data spanning educational, political, economic, and demographic metrics. It should be easy to merge any of this data to the node dataset.
 
 ```{r, include=FALSE}
 nodes <- read_csv('njnodes.csv') %>%
@@ -106,6 +106,8 @@ edges %>%
 ```
 
 ### Sample of Combined Dataset
+
+This combined dataset will allow us to measure network metrics of individual nodes against a wide array of municipality info from the New Jersey Data Book. There are many more columns in this dataset but I've only selected a few to not overcrowd.
 
 ```{r, echo=FALSE}
 cmb_data %>%

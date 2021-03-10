@@ -1,4 +1,4 @@
-Source,Target,Type,Id,Label,timeset,Weight,e_weight,e_crawldate
+source,target,type,id,label,timeset,weight,e_weight,e_crawldate
 n0,n0,Directed,0,,,30,15,20191002
 n1943,n1,Directed,2,,,36,36,20191004
 n30763,n1,Directed,3,,,53,6,20191024

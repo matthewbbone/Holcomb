@@ -146,7 +146,7 @@ wc_dist
 
 ```{r, include=FALSE}
 all5 <- keylist %>%
-  mutate(perc = count / nrow(keywords)) %>%
+  mutate(perc = round(count / nrow(keywords) * 100, 2)) %>%
   arrange(-count) %>%
   filter(count >= 10) %>%
   kable(format = 'markdown')
@@ -232,10 +232,9 @@ kl21 <- keylist21 %>%
   select(-count)
 
 increase18_20 <- kl18 %>%
-  left_join(kl19) %>%
-  left_join(kl20) %>%
-  left_join(kl21) %>%
-  filter(!is.na(perc20)) %>%
+  full_join(kl19) %>%
+  full_join(kl20) %>%
+  full_join(kl21) %>%
   filter(perc18 < perc19,
          perc19 < perc20) %>%
   mutate(perc18 = round(perc18*100, 2),
@@ -277,4 +276,132 @@ change_plot
 ```
 
 </center>
+
+## Keyword Groups
+
+The groups were formed by going through the list of keywords and grouping together ones that related to each other topically or were synonymous. However, this process was imperfect so these results are likely biased in some way. You can see from the below histogram that the distribution of keyword groups is similar but a bit more evenly spread.
+
+```{r, include=FALSE}
+groupkey <- read_csv('group.csv')
+
+groups <- unlist(groupkey$group)
+names(groups) <- groupkey$words
+
+grouped_increasers <- kl18 %>%
+  full_join(kl19) %>%
+  full_join(kl20) %>%
+  full_join(kl21) %>%
+  mutate(group = groups[words]) %>%
+  select(-words) %>%
+  group_by(group) %>%
+  mutate(count18 = sum(count18, na.rm = T),
+         perc18 = sum(perc18, na.rm = T),
+         count19 = sum(count19, na.rm = T),
+         perc19 = sum(perc19, na.rm = T),
+         count20 = sum(count20, na.rm = T),
+         perc20 = sum(perc20, na.rm = T),
+         count21 = sum(count21, na.rm = T),
+         perc21 = sum(perc21, na.rm = T),
+         freq_incr = round(perc20 / perc18, 2),
+         perc18 = round(perc18*100, 2),
+         perc19 = round(perc19*100, 2),
+         perc20 = round(perc20*100, 2),
+         perc21 = round(perc21*100, 2)) %>%
+  unique() %>%
+  ungroup() %>%
+  filter(perc18 < perc19,
+         perc19 < perc20) %>%
+  mutate(freq_incr = if_else(is.infinite(freq_incr), as.double(count20), freq_incr)) %>%
+  arrange(-freq_incr)
+
+grouped_growers <- grouped_increasers %>%
+  arrange(-freq_incr) %>%
+  head(15)
+```
+
+Number of Keywords: `r nrow(keylist)`
+
+Number of Keyword Groups: `r groupkey %>% select(group) %>% unique() %>% nrow()`
+
+```{r, include = FALSE}
+grouped_wc_dist <- keylist %>%
+  mutate(group = groups[words]) %>%
+  group_by(group) %>%
+  mutate(count = sum(count, na.rm = T)) %>%
+  select(group, count) %>%
+  ungroup() %>%
+  unique() %>%
+  gf_histogram(~count, fill = 'blue', bins = 200) %>%
+  gf_labs(x = 'group occurence counts') %>%
+  gf_theme()
+```
+
+```{r, echo=FALSE}
+grouped_wc_dist
+```
+## Keyword Groups that Increased in frequency from 2018 to 2019 and 2019 to 2020
+
+This table is the same as the previous one with keywords but uses keyword groups.
+
+```{r, echo=FALSE}
+grouped_increasers %>%
+  arrange(-freq_incr) %>%
+  select(group, count18, perc18, count19, perc19, 
+         count20, perc20, count21, perc21, freq_incr) %>%
+  kable(format = 'markdown')
+```
+
+## The Keyword Groups that Increase Most in Popularity from 2018 to 2020
+
+<center>
+
+```{r, include=FALSE}
+grouped_change_plot <- key_lat %>%
+  mutate(group = groups[words]) %>%
+  select(-words) %>%
+  group_by(group, year) %>%
+  mutate(count = sum(count, na.rm = T),
+         perc = sum(perc, na.rm = T)) %>%
+  ungroup() %>%
+  filter(group %in% grouped_growers$group,
+         year != 2021) %>%
+  mutate(year = factor(year, levels = c(2020, 2019, 2018)),
+         perc = round(perc * 100, 2)) %>%
+  gf_bar(reorder(group, -perc) ~ perc, 
+         stat = 'identity', 
+         fill = ~year, 
+         position = 'dodge') %>%
+  gf_labs(y = 'keywords', x = '% of articles with keyword')
+```
+
+```{r, echo=FALSE}
+grouped_change_plot
+```
+
+</center>
+
+Top 25 Keywords and Keyword Groups
+
+In grouping the keywords we can see some of the same trends as identified in the original keyword trends such as "incidental" and "epistemic", and "textanalysis". However, some interesting new ones emerge such as "crosscountry", "ecological", and "advocacy". 
+
+```{r, include=FALSE}
+top_key <- increase18_20 %>%
+  arrange(-freq_incr) %>%
+  select(words, freq_incr) %>%
+  head(25)
+
+top <- grouped_increasers %>%
+  arrange(-freq_incr) %>%
+  select(group, freq_incr) %>%
+  head(25) %>%
+  mutate(word = top_key$words,
+         word_increase = top_key$freq_incr) %>%
+  rename(group_increase = freq_incr) %>%
+  select(word, word_increase, group, group_increase)
+```
+
+```{r}
+top %>%
+  kable(format = 'markdown')
+```
 

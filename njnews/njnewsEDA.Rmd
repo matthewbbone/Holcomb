@@ -20,15 +20,19 @@ library(readr)
 library(tidyverse)
 library(ggformula)
 library(stringr)
+library(data.table)
+library(DT)
 
 knitr::opts_chunk$set(
   tidy=FALSE,     # display code as typed
   size="small")   # slightly smaller font for code
 ```
 
-This document is an exploratory data analysis for the New Jersey News Network data. The njnodes.csv and njedges.csv dataset where extracted from the 12706-gephi.gexf.xml file using gephi. 
+This document is an exploratory data analysis for the New Jersey News Network data. From the 12706-gephi.gexf.xml file, I derived a node and edge list using the software Gephi. Using Gephi, I was able to calculate a number of useful network metrics and export them in csv format. For the node dataset this includes metrics such as in/outdegree, eccentricity, authority, etc. For the edge dataset this includes the weight and direction. 
 
-Population Data: https://www.nj.gov/labor/lpa/dmograph/est/est_index.html
+I also compiled a dataset from the [NJ Local News Search](https://newsecosystems.org/njsearch/) of all the websites and their municipalities. I used this to map each node, which represents a news source, to a specific municipality. 
+
+In addition to these datasets, I used census and voting datasets from the [New Jersey Data Book](https://search.njdatabook.rutgers.edu/login.jsp). I was able to merge these to the nodes dataset by using the municipality name and county. The New Jersey Data Book has wide array of data spanning educational, political, economic, and demographic metrics. It should be easy to merge any of this data to the node dataset.
 
 ```{r, include=FALSE}
 nodes <- read_csv('njnodes.csv') %>%
@@ -38,7 +42,7 @@ url_end <- function(x) {
   str_extract(x, '\\.[a-zA-Z]*$')
 }
 
-url_ends <- paste(unique(unlist(lapply(nodes['Label'], url_end))), collapse = "|")
+url_ends <- paste(unique(unlist(lapply(nodes['label'], url_end))), collapse = "|")
 
 edges <- read_csv('njedges.csv')
 
@@ -46,58 +50,72 @@ local <- read_csv('localnews.csv') %>%
   mutate(website = gsub('https://', '', website),
          website = gsub('http://','', website),
          website = gsub('www.', '', website),
-         website = gsub('/.*$', '', website),
-         municipal = tolower(municipal),
-         municipal = gsub('(-| )', '', municipal))
+         website = gsub('/.*$', '', website))
 
-census <- read_csv('njcensus.csv') %>%
-  mutate(municipal = gsub('city city', 'city', tolower(municipal)),
-         municipal = gsub('(-| )', '', municipal),
-         county = gsub(' ', '', county),
-         county = tolower(county))
+muni_key <- read_csv('local_to_data.csv')
 
-voters <- read_csv('voters2019.csv') %>%
-  mutate(county = gsub(' ', '', tolower(county)),
-         municipal = gsub('( twp| city| town| boro| village| township| borough|-| )', '', tolower(municipal)))
+census <- read_csv('census2019.csv')
+voting <- read_csv('voting2019.csv')
 ```
 
 ```{r, include=FALSE}
-county_dict <- unlist(census['county'])
-names(county_dict) <- unlist(census['municipal'])
+muni_dict <- unlist(muni_key['data_muni'])
+names(muni_dict) <- unlist(muni_key['local_muni'])
+
+county_dict <- unlist(muni_key['county'])
+names(county_dict) <- unlist(muni_key['data_muni'])
+
+match_muni <- function(x) {
+  muni_dict[x]
+}
 
 match_county <- function(x) {
   county_dict[x]
 }
 
+match_muni <- Vectorize(match_muni)
 match_county <- Vectorize(match_county)
 
-local %>%
-  mutate(Label = website,
-         county = gsub('(\\(|\\))', '', str_extract(municipal, '\\(.*\\)')),
-         municipal = gsub('\\(.*\\)', '', municipal),
-         county = if_else(is.na(county), match_county(municipal), county)) %>%
-  left_join(nodes, by='Label') %>%
-  left_join(census, by = c('municipal', 'county')) %>%
-  mutate(county = gsub('county', '', county),
-         municipal = gsub('(township|city|borough|-|town|village)', '', municipal)) %>%
-  left_join(voters, by=c('municipal', 'county')) %>%
-  select(county, municipal, Degree, registered) %>%
-  View()
-
+cmb_data <- local %>%
+  mutate(label = website,
+         municipal = match_muni(municipal),
+         county = match_county(municipal)) %>%
+  left_join(nodes, by='label') %>%
+  left_join(census, by=c('municipal','county')) %>%
+  left_join(voting, by=c('municipal','county'))
 ```
 
-```{r}
-cmb_dat %>%
-  select(county, municipal, `weighted indegree`, c2019) %>%
-  group_by(county, municipal) %>%
-  mutate(muni_degree = sum(`weighted indegree`, na.rm=T)) %>%
-  select(-`weighted indegree`) %>%
-  unique() %>%
-  ungroup() %>%
-  group_by(county) %>%
-  summarise(population = sum(c2019), 
-            info_density = sum(muni_degree) / sum(c2019)) %>%
-  arrange(-info_density)
+### Sample of Nodes Dataset
+
+There are more columns such as xy-coordinates, weighted degrees, and rgb-color values but I filtered some out to not overcrowd.
+
+```{r, echo=FALSE}
+nodes %>%
+  sample(100) %>%
+  select(id, label, size, degree, indegree, outdegree, eccentricity, authority, hub) %>%
+  datatable(rownames = F)
+```
+
+### Sample of Edges Dataset
+
+```{r, echo=FALSE}
+edges %>%
+  sample(100) %>%
+  select(id, source, target, type, weight) %>%
+  datatable(rownames = F)
+```
+
+### Sample of Combined Dataset
+
+```{r, echo=FALSE}
+cmb_data %>%
+  sample(100) %>%
+  select(name, municipal, county, degree, population, perc_hispanic, democrats_perc, republicans_perc) %>%
+  datatable(rownames = F)
+```
+
+```{r, include=FALSE}
+
 ```
 
 

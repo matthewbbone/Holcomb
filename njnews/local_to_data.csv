@@ -1,0 +1,566 @@
+local_muni,data_muni,county
+Aberdeen Township,Aberdeen,Monmouth
+Absecon City,Absecon,Atlantic
+Alexandria Township,Alexandria,Hunterdon
+Allamuchy Township,Allamuchy,Warren
+Allendale Borough,Allendale,Bergen
+Allenhurst Borough,Allenhurst,Monmouth
+Allentown Borough,Allentown,Monmouth
+,Alloway,Salem
+Alpha Borough,Alpha,Warren
+Alpine Borough,Alpine,Bergen
+Andover Borough,Andover,Sussex
+Andover Township,Andover Twp,Sussex
+Asbury Park City,Asbury Park,Monmouth
+Atlantic City,Atlantic City,Atlantic
+Atlantic Highlands Borough,Atlantic Highlands,Monmouth
+Audubon Borough,Audubon,Camden
+Audubon Park Borough,Audubon Park,Camden
+Avalon Borough,Avalon,Cape May
+Avon-by-the-Sea Borough,Avon By The Sea,Monmouth
+Barnegat Light Borough,Barnegat Light,Ocean
+Barnegat Township,Barnegat Twp,Ocean
+Barrington Borough,Barrington,Camden
+Bass River Township,Bass River,Burlington
+Bay Head Borough,Bay Head,Ocean
+Bayonne City,Bayonne,Hudson
+Beach Haven Borough,Beach Haven,Ocean
+Beachwood Borough,Beachwood,Ocean
+Bedminster Township,Bedminster,Somerset
+Belleville Township,Belleville,Essex
+Bellmawr Borough,Bellmawr,Camden
+Belmar Borough,Belmar,Monmouth
+Belvidere Town,Belvidere,Warren
+Bergenfield Borough,Bergenfield,Bergen
+Berkeley Heights Township,Berkeley Heights,Union
+Berkeley Township,Berkeley Twp,Ocean
+Berlin Borough,Berlin,Camden
+Berlin Township,Berlin Twp,Camden
+Bernards Township,Bernards Twp,Somerset
+Bernardsville Borough,Bernardsville,Somerset
+Bethlehem Township,Bethlehem,Hunterdon
+Beverly City,Beverly,Burlington
+Blairstown Township,Blairstown,Warren
+Bloomfield Township,Bloomfield,Essex
+Bloomingdale Borough,Bloomingdale,Passaic
+Bloomsbury Borough,Bloomsbury,Hunterdon
+Bogota Borough,Bogota,Bergen
+Boonton Town,Boonton,Morris
+Boonton Township,Boonton Twp,Morris
+Bordentown City,Bordentown,Burlington
+Bordentown Township,Bordentown Twp,Burlington
+Bound Brook Borough,Bound Brook,Somerset
+Bradley Beach Borough,Bradley Beach,Monmouth
+Branchburg Township,Branchburg,Somerset
+Branchville Borough,Branchville,Sussex
+Brick Township,Brick,Ocean
+Bridgeton City,Bridgeton,Cumberland
+Bridgewater Township,Bridgewater,Somerset
+Brielle Borough,Brielle,Monmouth
+Brigantine City,Brigantine,Atlantic
+Brooklawn Borough,Brooklawn,Camden
+Buena Borough,Buena,Atlantic
+Buena Vista Township,Buena Vista,Atlantic
+Burlington City,Burlington,Burlington
+Burlington Township,Burlington Twp,Burlington
+Butler Borough,Butler,Morris
+Byram Township,Byram,Sussex
+Caldwell Borough,Caldwell,Essex
+Califon Borough,Califon,Hunterdon
+Camden City,Camden,Camden
+Cape May City,Cape May,Cape May
+Cape May Point Borough,Cape May Point,Cape May
+Carlstadt Borough,Carlstadt,Bergen
+Carneys Point Township,Carneys Point,Salem
+Carteret Borough,Carteret,Middlesex
+Cedar Grove Township,Cedar Grove,Essex
+Chatham Borough,Chatham,Morris
+Chatham Township,Chatham Twp,Morris
+Cherry Hill Township,Cherry Hill,Camden
+Chesilhurst Borough,Chesilhurst,Camden
+Chester Borough,Chester,Morris
+Chester Township,Chester Twp,Morris
+Chesterfield Township,Chesterfield,Burlington
+Cinnaminson Township,Cinnaminson,Burlington
+City of Orange Township,Orange,Essex
+Clark Township,Clark,Union
+Clayton Borough,Clayton,Gloucester
+Clementon Borough,Clementon,Camden
+Cliffside Park Borough,Cliffside Park,Bergen
+Clifton City,Clifton,Passaic
+Clinton Town,Clinton,Hunterdon
+Clinton Township,Clinton Twp,Hunterdon
+Closter Borough,Closter,Bergen
+Collingswood Borough,Collingswood,Camden
+Colts Neck Township,Colts Neck,Monmouth
+Commercial Township,Commercial,Cumberland
+Corbin City,Corbin City,Atlantic
+Cranbury Township,Cranbury,Middlesex
+Cranford Township,Cranford,Union
+Cresskill Borough,Cresskill,Bergen
+Deal Borough,Deal,Monmouth
+Deerfield Township,Deerfield,Cumberland
+Delanco Township,Delanco,Burlington
+Delaware Township,Delaware,Hunterdon
+Delran Township,Delran,Burlington
+Demarest Borough,Demarest,Bergen
+Dennis Township,Dennis,Cape May
+Denville Township,Denville,Morris
+Deptford Township,Deptford,Gloucester
+Dover Town,Dover,Morris
+Downe Township,Downe,Cumberland
+Dumont Borough,Dumont,Bergen
+Dunellen Borough,Dunellen,Middlesex
+Eagleswood Township,Eagleswood,Ocean
+East Amwell Township,East Amwell,Hunterdon
+East Brunswick Township,East Brunswick,Middlesex
+East Greenwich Township,East Greenwich,Gloucester
+East Hanover Township,East Hanover,Morris
+East Newark Borough,East Newark,Hudson
+East Orange City,East Orange,Essex
+East Rutherford Borough,East Rutherford,Bergen
+East Windsor Township,East Windsor,Mercer
+Eastampton Township,Eastampton,Burlington
+Eatontown Borough,Eatontown,Monmouth
+Edgewater Borough,Edgewater,Bergen
+Edgewater Park Township,Edgewater Park,Burlington
+Edison Township,Edison,Middlesex
+Egg Harbor City,Egg Harbor,Atlantic
+Egg Harbor Township,Egg Harbor Twp,Atlantic
+Elizabeth City,Elizabeth,Union
+Elk Township,Elk,Gloucester
+Elmer Borough,Elmer,Salem
+Elmwood Park Borough,Elmwood Park,Bergen
+,Elsinboro,Salem
+Emerson Borough,Emerson,Bergen
+Englewood City,Englewood,Bergen
+Englewood Cliffs Borough,Englewood Cliffs,Bergen
+Englishtown Borough,Englishtown,Monmouth
+Essex Fells Borough,Essex Fells,Essex
+Estell Manor City,Estell Manor,Atlantic
+Evesham Township,Evesham,Burlington
+Ewing Township,Ewing,Mercer
+Fair Haven Borough,Fair Haven,Monmouth
+Fair Lawn Borough,Fair Lawn,Bergen
+Fairfield Township (Cumberland County),Fairfield,Cumberland
+Fairfield Township (Essex County),Fairfield,Essex
+Fairview Borough,Fairview,Bergen
+Fanwood Borough,Fanwood,Union
+Far Hills Borough,Far Hills,Somerset
+Farmingdale Borough,Farmingdale,Monmouth
+Fieldsboro Borough,Fieldsboro,Burlington
+Flemington Borough,Flemington,Hunterdon
+Florence Township,Florence,Burlington
+Florham Park Borough,Florham Park,Morris
+Folsom Borough,Folsom,Atlantic
+Fort Lee Borough,Fort Lee,Bergen
+Frankford Township,Frankford,Sussex
+Franklin Borough,Franklin,Sussex
+Franklin Lakes Borough,Franklin Lakes,Bergen
+Franklin Township (Gloucester County),Franklin Twp,Gloucester
+Franklin Township (Hunterdon County),Franklin Twp,Hunterdon
+Franklin Township (Somerset County),Franklin Twp,Somerset
+Franklin Township (Warren County),Franklin Twp,Warren
+Fredon Township,Fredon,Sussex
+Freehold Borough,Freehold,Monmouth
+Freehold Township,Freehold Twp,Monmouth
+Frelinghuysen Township,Frelinghuysen,Warren
+Frenchtown Borough,Frenchtown,Hunterdon
+Galloway Township,Galloway,Atlantic
+Garfield City,Garfield,Bergen
+Garwood Borough,Garwood,Union
+Gibbsboro Borough,Gibbsboro,Camden
+Glassboro Borough,Glassboro,Gloucester
+Glen Gardner Borough,Glen Gardner,Hunterdon
+Glen Ridge Borough,Glen Ridge,Essex
+Glen Rock Borough,Glen Rock,Bergen
+Gloucester City,Gloucester City,Camden
+Gloucester Township,Gloucester Twp,Camden
+Green Township,Green,Sussex
+Green Brook Township,Green Brook,Somerset
+Greenwich Township (Cumberland County),Greenwich,Cumberland
+Greenwich Township (Gloucester County),Greenwich,Gloucester
+Greenwich Township (Warren County),Greenwich,Warren
+Guttenberg Town,Guttenberg,Hudson
+Hackensack City,Hackensack,Bergen
+Hackettstown Town,Hackettstown,Warren
+Haddon Heights Borough,Haddon Heights,Camden
+Haddon Township,Haddon Twp,Camden
+Haddonfield Borough,Haddonfield,Camden
+Hainesport Township,Hainesport,Burlington
+Haledon Borough,Haledon,Passaic
+Hamburg Borough,Hamburg,Sussex
+Hamilton Township (Atlantic County),Hamilton,Atlantic
+Hamilton Township (Mercer County),Hamilton,Mercer
+Hammonton Town,Hammonton,Atlantic
+Hampton Borough,Hampton Boro,Hunterdon
+Hampton Township,Hampton Twp,Sussex
+Hanover Township,Hanover,Morris
+Harding Township,Harding,Morris
+Hardwick Township,Hardwick,Warren
+Hardyston Township,Hardyston,Sussex
+Harmony Township,Harmony,Warren
+Harrington Park Borough,Harrington Park,Bergen
+Harrison Town,Harrison,Hudson
+Harrison Township,Harrison Twp,Gloucester
+Harvey Cedars Borough,Harvey Cedars,Ocean
+Hasbrouck Heights Borough,Hasbrouck Heights,Bergen
+Haworth Borough,Haworth,Bergen
+Hawthorne Borough,Hawthorne,Passaic
+Hazlet Township,Hazlet,Monmouth
+Helmetta Borough,Helmetta,Middlesex
+High Bridge Borough,High Bridge,Hunterdon
+Highland Park Borough,Highland Park,Middlesex
+Highlands Borough,Highlands,Monmouth
+Hightstown Borough,Hightstown,Mercer
+Hillsborough Township,Hillsborough,Somerset
+Hillsdale Borough,Hillsdale,Bergen
+Hillside Township,Hillside,Union
+Hi-Nella Borough,Hi-Nella,Camden
+Hoboken City,Hoboken,Hudson
+Ho-Ho-Kus Borough,Ho-Ho-Kus,Bergen
+Holland Township,Holland,Hunterdon
+Holmdel Township,Holmdel,Monmouth
+Hopatcong Borough,Hopatcong,Sussex
+Hope Township,Hope,Warren
+Hopewell Borough,Hopewell,Mercer
+,Hopewell,Cumberland
+Hopewell Township,Hopewell Twp,Mercer
+Howell Township,Howell,Monmouth
+Independence Township,Independence,Warren
+Interlaken Borough,Interlaken,Monmouth
+Irvington Township,Irvington,Essex
+Island Heights Borough,Island Heights,Ocean
+Jackson Township,Jackson,Ocean
+Jamesburg Borough,Jamesburg,Middlesex
+Jefferson Township,Jefferson,Morris
+Jersey City,Jersey City,Hudson
+Keansburg Borough,Keansburg,Monmouth
+Kearny Town,Kearny,Hudson
+Kenilworth Borough,Kenilworth,Union
+Keyport Borough,Keyport,Monmouth
+Kingwood Township,Kingwood,Hunterdon
+Kinnelon Borough,Kinnelon,Morris
+Knowlton Township,Knowlton,Warren
+Lacey Township,Lacey,Ocean
+Lafayette Township,Lafayette,Sussex
+Lake Como Borough,Lake Como,Monmouth
+Lakehurst Borough,Lakehurst,Ocean
+Lakewood Township,Lakewood,Ocean
+Lambertville City,Lambertville,Hunterdon
+Laurel Springs Borough,Laurel Springs,Camden
+Lavallette Borough,Lavallette,Ocean
+Lawnside Borough,Lawnside,Camden
+Lawrence Township (Cumberland County),Lawrence,Cumberland
+Lawrence Township (Mercer County),Lawrence,Mercer
+Lebanon Borough,Lebanon,Hunterdon
+Lebanon Township,Lebanon Twp,Hunterdon
+Leonia Borough,Leonia,Bergen
+Liberty Township,Liberty,Warren
+Lincoln Park Borough,Lincoln Park,Morris
+Linden City,Linden,Union
+Lindenwold Borough,Lindenwold,Camden
+Linwood City,Linwood,Atlantic
+Little Egg Harbor Township,Little Egg Harbor,Ocean
+Little Falls Township,Little Falls,Passaic
+Little Ferry Borough,Little Ferry,Bergen
+Little Silver Borough,Little Silver,Monmouth
+Livingston Township,Livingston,Essex
+Loch Arbour Village,Loch Arbour,Monmouth
+Lodi Borough,Lodi,Bergen
+Logan Township,Logan,Gloucester
+Long Beach Township,Long Beach,Ocean
+Long Branch City,Long Branch,Monmouth
+Long Hill Township,Long Hill,Morris
+Longport Borough,Longport,Atlantic
+Lopatcong Township,Lopatcong,Warren
+,Lower Alloways Creek,Salem
+Lower Township,Lower Township,Cape May
+Lumberton Township,Lumberton,Burlington
+Lyndhurst Township,Lyndhurst,Bergen
+Madison Borough,Madison,Morris
+Magnolia Borough,Magnolia,Camden
+Mahwah Township,Mahwah,Bergen
+Manalapan Township,Manalapan,Monmouth
+Manasquan Borough,Manasquan,Monmouth
+Manchester Township,Manchester,Ocean
+Mannington Township,Mannington,Salem
+Mansfield Township (Burlington County),Mansfield,Burlington
+Mansfield Township (Warren County),Mansfield,Warren
+Mantoloking Borough,Mantoloking,Ocean
+Mantua Township,Mantua,Gloucester
+Manville Borough,Manville,Somerset
+Maple Shade Township,Maple Shade,Burlington
+Maplewood Township,Maplewood,Essex
+Margate City,Margate,Atlantic
+Marlboro Township,Marlboro,Monmouth
+Matawan Borough,Matawan,Monmouth
+Maurice River Township,Maurice River,Cumberland
+Maywood Borough,Maywood,Bergen
+Medford Lakes Borough,Medford Lakes,Burlington
+Medford Township,Medford ,Burlington
+Mendham Borough,Mendham,Morris
+Mendham Township,Mendham Twp,Morris
+Merchantville Borough,Merchantville,Camden
+Metuchen Borough,Metuchen,Middlesex
+Middle Township,Middle Township,Cape May
+Middlesex Borough,Middlesex Borough,Middlesex
+Middletown Township,Middletown,Monmouth
+Midland Park Borough,Midland Park,Bergen
+Milford Borough,Milford,Hunterdon
+Millburn Township,Millburn,Essex
+Millstone Borough,Millstone,Somerset
+Millstone Township,Millstone Twp,Monmouth
+Milltown Borough,Milltown,Middlesex
+Millville City,Millville,Cumberland
+Mine Hill Township,Mine Hill,Morris
+Monmouth Beach Borough,Monmouth Beach,Monmouth
+Monroe Township (Gloucester County),Monroe,Gloucester
+Monroe Township (Middlesex County),Monroe,Middlesex
+Montague Township,Montague,Sussex
+Montclair Township,Montclair,Essex
+Montgomery Township,Montgomery,Somerset
+Montvale Borough,Montvale,Bergen
+Montville Township,Montville,Morris
+Moonachie Borough,Moonachie,Bergen
+Moorestown Township,Moorestown,Burlington
+Morris Plains Borough,Morris Plains,Morris
+Morris Township,Morris Twp,Morris
+Morristown Town,Morristown,Morris
+Mount Arlington Borough,Mount Arlington,Morris
+Mount Ephraim Borough,Mount Ephraim,Camden
+Mount Holly Township,Mount Holly,Burlington
+Mount Laurel Township,Mount Laurel,Burlington
+Mount Olive Township,Mount Olive,Morris
+Mountain Lakes Borough,Mountain Lakes,Morris
+Mountainside Borough,Mountainside,Union
+Mullica Township,Mullica,Atlantic
+National Park Borough,National Park,Gloucester
+Neptune City Borough,Neptune City,Monmouth
+Neptune Township,Neptune Twp,Monmouth
+Netcong Borough,Netcong,Morris
+New Brunswick City,New Brunswick,Middlesex
+New Hanover Township,New Hanover,Burlington
+New Milford Borough,New Milford,Bergen
+New Providence Borough,New Providence,Union
+Newark City,Newark,Essex
+Newfield Borough,Newfield,Gloucester
+Newton Town,Newton,Sussex
+North Arlington Borough,North Arlington,Bergen
+North Bergen Township,North Bergen,Hudson
+North Brunswick Township,North Brunswick,Middlesex
+North Caldwell Borough,North Caldwell,Essex
+North Haledon Borough,North Haledon,Passaic
+North Hanover Township,North Hanover,Burlington
+North Plainfield Borough,North Plainfield,Somerset
+North Wildwood City,North Wildwood,Cape May
+Northfield City,Northfield,Atlantic
+Northvale Borough,Northvale,Bergen
+Norwood Borough,Norwood,Bergen
+Nutley Township,Nutley,Essex
+Oakland Borough,Oakland,Bergen
+Oaklyn Borough,Oaklyn,Camden
+Ocean City,Ocean City,Cape May
+Ocean Gate Borough,Ocean Gate,Ocean
+Ocean Township (Monmouth County),Ocean Twp,Monmouth
+Ocean Township (Ocean County),Ocean Twp,Ocean
+Oceanport Borough,Oceanport,Monmouth
+Ogdensburg Borough,Ogdensburg,Sussex
+Old Bridge Township,Old Bridge,Middlesex
+Old Tappan Borough,Old Tappan,Bergen
+Oldmans Township,Oldmans,Salem
+Oradell Borough,Oradell,Bergen
+Oxford Township,Oxford,Warren
+Palisades Park Borough,Palisades Park,Bergen
+Palmyra Borough,Palmyra,Burlington
+Paramus Borough,Paramus,Bergen
+Park Ridge Borough,Park Ridge,Bergen
+Parsippany-Troy Hills Township,Parsippany-Troy Hills,Morris
+Passaic City,Passaic,Passaic
+Paterson City,Paterson,Passaic
+Paulsboro Borough,Paulsboro,Gloucester
+Peapack-Gladstone Borough,Peapack Gladstone,Somerset
+Pemberton Borough,Pemberton,Burlington
+Pemberton Township,Pemberton Twp,Burlington
+Pennington Borough,Pennington,Mercer
+Penns Grove Borough,Penns Grove,Salem
+Pennsauken Township,Pennsauken,Camden
+Pennsville Township,Pennsville,Salem
+Pequannock Township,Pequannock,Morris
+Perth Amboy City,Perth Amboy,Middlesex
+Phillipsburg Town,Phillipsburg,Warren
+Pilesgrove Township,Pilesgrove,Salem
+Pine Beach Borough,Pine Beach,Ocean
+Pine Hill Borough,Pine Hill,Camden
+Pine Valley Borough,Pine Valley,Camden
+Piscataway Township,Piscataway,Middlesex
+Pitman Borough,Pitman,Gloucester
+Pittsgrove Township,Pittsgrove,Salem
+Plainfield City,Plainfield,Union
+Plainsboro Township,Plainsboro,Middlesex
+Pleasantville City,Pleasantville,Atlantic
+Plumsted Township,Plumsted,Ocean
+Pohatcong Township,Pohatcong,Warren
+Point Pleasant Beach Borough,Point Pleasant  Beach,Ocean
+Point Pleasant Borough,Point Pleasant,Ocean
+Pompton Lakes Borough,Pompton Lakes,Passaic
+Port Republic City,Port Republic,Atlantic
+Princeton,Princeton (as of 1/1/2013),Mercer
+Prospect Park Borough,Prospect Park,Passaic
+,Quinton,Salem
+Rahway City,Rahway,Union
+Ramsey Borough,Ramsey,Bergen
+Randolph Township,Randolph,Morris
+Raritan Borough,Raritan,Somerset
+Raritan Township,Raritan Twp,Hunterdon
+Readington Township,Readington,Hunterdon
+Red Bank Borough,Red Bank,Monmouth
+Ridgefield Borough,Ridgefield,Bergen
+Ridgefield Park Village,Ridgefield Park,Bergen
+Ridgewood Village,Ridgewood,Bergen
+Ringwood Borough,Ringwood,Passaic
+River Edge Borough,River Edge,Bergen
+River Vale Township,River Vale,Bergen
+Riverdale Borough,Riverdale,Morris
+Riverside Township,Riverside,Burlington
+Riverton Borough,Riverton,Burlington
+Robbinsville Township,Robbinsville,Mercer
+Rochelle Park Township,Rochelle Park,Bergen
+Rockaway Borough,Rockaway,Morris
+Rockaway Township,Rockaway Twp,Morris
+Rockleigh Borough,Rockleigh,Bergen
+Rocky Hill Borough,Rocky Hill,Somerset
+Roosevelt Borough,Roosevelt,Monmouth
+Roseland Borough,Roseland,Essex
+Roselle Borough,Roselle,Union
+Roselle Park Borough,Roselle Park,Union
+Roxbury Township,Roxbury,Morris
+Rumson Borough,Rumson,Monmouth
+Runnemede Borough,Runnemede,Camden
+Rutherford Borough,Rutherford,Bergen
+Saddle Brook Township,Saddle Brook,Bergen
+Saddle River Borough,Saddle River,Bergen
+Salem City,Salem,Salem
+Sandyston Township,Sandyston,Sussex
+Sayreville Borough,Sayreville,Middlesex
+Scotch Plains Township,Scotch Plains,Union
+Sea Bright Borough,Sea Bright,Monmouth
+Sea Girt Borough,Sea Girt,Monmouth
+Sea Isle City,Sea Isle City,Cape May
+Seaside Heights Borough,Seaside Heights,Ocean
+Seaside Park Borough,Seaside Park,Ocean
+Secaucus Town,Secaucus,Hudson
+Shamong Township,Shamong,Burlington
+Shiloh Borough,Shiloh,Cumberland
+Ship Bottom Borough,Ship Bottom,Ocean
+Shrewsbury Borough,Shrewsbury,Monmouth
+Shrewsbury Township,Shrewsbury Twp,Monmouth
+Somerdale Borough,Somerdale,Camden
+Somers Point City,Somers Point,Atlantic
+Somerville Borough,Somerville,Somerset
+South Amboy City,South Amboy,Middlesex
+South Bound Brook Borough,South Bound Brook,Somerset
+South Brunswick Township,South Brunswick,Middlesex
+South Hackensack Township,South Hackensack,Bergen
+South Harrison Township,South Harrison,Gloucester
+South Orange Village Township,South Orange,Essex
+South Plainfield Borough,South Plainfield,Middlesex
+South River Borough,South River,Middlesex
+South Toms River Borough,South Toms River,Ocean
+Southampton Township,Southampton,Burlington
+Sparta Township,Sparta,Sussex
+Spotswood Borough,Spotswood,Middlesex
+Spring Lake Borough,Spring Lake,Monmouth
+Spring Lake Heights Borough,Spring Lake Heights,Monmouth
+Springfield Township,Springfield,Union
+,Springfield,Burlington
+Stafford Township,Stafford,Ocean
+Stanhope Borough,Stanhope,Sussex
+Stillwater Township,Stillwater,Sussex
+Stockton Borough,Stockton,Hunterdon
+Stone Harbor Borough,Stone Harbor,Cape May
+Stow Creek Township,Stow Creek,Cumberland
+Stratford Borough,Stratford,Camden
+Summit City,Summit,Union
+Surf City Borough,Surf City,Ocean
+Sussex Borough,Sussex,Sussex
+Swedesboro Borough,Swedesboro,Gloucester
+Tabernacle Township,Tabernacle,Burlington
+Tavistock Borough,Tavistock,Camden
+Teaneck Township,Teaneck,Bergen
+Tenafly Borough,Tenafly,Bergen
+Teterboro Borough,Teterboro,Bergen
+Tewksbury Township,Tewksbury,Hunterdon
+Tinton Falls Borough,Tinton Falls,Monmouth
+Toms River Township,Toms River,Ocean
+Totowa Borough,Totowa,Passaic
+Trenton City,Trenton,Mercer
+Tuckerton Borough,Tuckerton,Ocean
+Union Beach Borough,Union Beach,Monmouth
+Union City,Union City,Hudson
+Union Township (Hunterdon County),Union Twp,Hunterdon
+Union Township (Union County),Union Twp,Union
+Upper Deerfield Township,Upper Deerfield,Cumberland
+Upper Freehold Township,Upper Freehold,Monmouth
+Upper Pittsgrove Township,Upper Pittsgrove,Salem
+Upper Saddle River Borough,Upper Saddle River,Bergen
+Upper Township,Upper Township,Cape May
+Ventnor City,Ventnor,Atlantic
+Vernon Township,Vernon,Sussex
+Verona Township,Verona,Essex
+Victory Gardens Borough,Victory Gardens,Morris
+Vineland City,Vineland,Cumberland
+Voorhees Township,Voorhees,Camden
+Waldwick Borough,Waldwick,Bergen
+Wall Township,Wall,Monmouth
+Wallington Borough,Wallington,Bergen
+Walpack Township,Walpack,Sussex
+Wanaque Borough,Wanaque,Passaic
+Wantage Township,Wantage,Sussex
+Warren Township,Warren,Somerset
+Washington Borough,Washington,Warren
+Washington Township (Bergen County),Washington Twp,Bergen
+Washington Township (Burlington County),Washington Twp,Burlington
+Washington Township (Gloucester County),Washington Twp,Gloucester
+Washington Township (Morris County),Washington Twp,Morris
+Washington Township (Warren County),Washington Twp,Warren
+Watchung Borough,Watchung,Somerset
+Waterford Township,Waterford,Camden
+Wayne Township,Wayne,Passaic
+Weehawken Township,Weehawken,Hudson
+Wenonah Borough,Wenonah,Gloucester
+West Amwell Township,West Amwell,Hunterdon
+West Caldwell Township,West Caldwell,Essex
+West Cape May Borough,West Cape May,Cape May
+West Deptford Township,West Deptford,Gloucester
+West Long Branch Borough,West Long Branch,Monmouth
+West Milford Township,West Milford,Passaic
+West New York Town,West New York,Hudson
+West Orange Township,West Orange,Essex
+West Wildwood Borough,West Wildwood,Cape May
+West Windsor Township,West Windsor,Mercer
+Westampton Township,Westampton,Burlington
+Westfield Town,Westfield,Union
+Westville Borough,Westville,Gloucester
+Westwood Borough,Westwood,Bergen
+Weymouth Township,Weymouth,Atlantic
+Wharton Borough,Wharton,Morris
+White Township,White,Warren
+Wildwood City,Wildwood,Cape May
+Wildwood Crest Borough,Wildwood Crest,Cape May
+Willingboro Township,Willingboro,Burlington
+Winfield Township,Winfield,Union
+Winslow Township,Winslow,Camden
+Woodbine Borough,Woodbine,Cape May
+Woodbridge Township,Woodbridge,Middlesex
+Woodbury City,Woodbury,Gloucester
+Woodbury Heights Borough,Woodbury Heights,Gloucester
+Woodcliff Lake Borough,Woodcliff Lake,Bergen
+Woodland Park Borough,Woodland,Burlington
+Woodland Township,Woodland Park,Passaic
+Woodlynne Borough,Woodlynne,Camden
+Wood-Ridge Borough,Wood-Ridge,Bergen
+Woodstown Borough,Woodstown,Salem
+Woolwich Township,Woolwich,Gloucester
+Wrightstown Borough,Wrightstown,Burlington
+Wyckoff Township,Wyckoff,Bergen

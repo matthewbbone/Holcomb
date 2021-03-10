@@ -1,0 +1,566 @@
+county,municipal,population,perc_black,perc_asian,perc_hispanic,perc_0_5,perc_65
+Warren,Liberty,"2,942",1.02,1.5,4.15,4.62,9.62
+Atlantic,Brigantine,"9,450",2.91,4.72,6.88,4.01,21.76
+Monmouth,Deal,750,1.6,3.47,7.33,2.8,28.67
+Monmouth,Manalapan,"38,872",2.38,6.9,5.66,5.27,12.44
+Bergen,Norwood,"5,711",1.37,27.18,4.55,3.75,20.03
+Bergen,North Arlington,"15,392",1.43,7.87,20.86,5.05,16.29
+Middlesex,Old Bridge,"65,375",6.21,14.34,10.81,5.77,12.15
+Morris,Riverdale,"3,559",1.21,5.31,7.19,6.38,15.03
+Bergen,Montvale,"7,844",1.03,11.04,5.34,5.76,14.52
+Union,Winfield,"1,471",0.95,0.14,6.39,4.01,15.84
+Bergen,Mahwah,"25,890",2.62,7.81,6.26,4.18,14.21
+Monmouth,Shrewsbury,"3,809",0.66,2.13,2.49,5.93,17.62
+Bergen,Hillsdale,"10,219",1.01,6.26,7.77,5.24,14.79
+Bergen,Hasbrouck Heights,"11,842",2.86,9.99,14.86,5.64,15.01
+Morris,Jefferson,"21,314",1.56,4.6,6.48,5.94,10.78
+Middlesex,South Plainfield,"23,385",10.1,14.68,13.24,5.57,13.53
+Bergen,Fort Lee,"35,345",2.75,38.44,10.97,5.14,21.82
+Middlesex,South Amboy,"8,631",4.43,4.03,13.42,6.02,11.31
+Bergen,Glen Rock,"11,601",1.37,9.09,4.54,6.06,12.93
+Bergen,Edgewater,"11,513",4.95,35.47,11.1,8.29,11.64
+Bergen,Fair Lawn,"32,457",1.75,9.72,10.15,5.22,16.34
+Monmouth,Asbury Park,"16,116",51.35,0.48,25.53,7.69,10.33
+Monmouth,Allenhurst,496,1.01,1.01,4.44,3.43,19.76
+Middlesex,Woodbridge,"99,585",9.85,22.42,15.63,6.21,12.64
+Middlesex,Spotswood,"8,257",2.98,5.14,8.32,5.52,18.94
+Monmouth,Colts Neck,"10,142",1.67,4.58,3.54,4.16,13.57
+Monmouth,Brielle,"4,774",2.53,0.94,3.18,3.73,16.93
+Monmouth,Belmar,"5,794",3.49,0.91,16.76,4.94,14.83
+Monmouth,Atlantic Highlands,"4,385",1.44,2.17,5.13,5.34,15.55
+Salem,Upper Pittsgrove,"3,505",2.17,0.23,3.02,4.68,15.69
+Salem,Alloway,"3,467",5.08,0.89,1.96,5.34,11.85
+Somerset,Bound Brook,"10,402",5.74,2.57,48.66,7.09,10.12
+Somerset,Far Hills,919,0.65,1.85,9.58,5.55,16.32
+Somerset,Green Brook,"7,203",3.37,20.21,6.86,5.62,13.45
+Salem,Penns Grove,"5,147",39.77,0.49,28.27,9.46,9.54
+Salem,Pittsgrove,"9,393",6.97,0.94,4.8,5.01,12.53
+Bergen,Emerson,"7,401",1.08,8.55,8.36,5.34,19.85
+Ocean,Barnegat Twp,"20,936",3.25,1.73,6.78,5.09,24.1
+Bergen,Little Ferry,"10,626",3.94,24.24,22.98,5.65,13.16
+Bergen,River Edge,"11,340",1.52,22.19,7.66,5.93,13.8
+Morris,Wharton,"6,522",4.57,5.67,40.33,5.89,11.71
+Morris,Victory Gardens,"1,520",16.25,2.43,62.96,9.01,6.25
+Ocean,Berkeley Twp,"41,255",1.75,1.13,4.92,3.11,43.38
+Somerset,Manville,"10,344",2.72,1.99,18.98,6.45,14.23
+Bergen,Teaneck,"39,776",27.69,9.11,16.53,6.59,14.85
+Ocean,Lakewood,"92,843",6.35,0.84,17.3,17.42,12.16
+Somerset,North Plainfield,"21,936",18.85,5.81,44.21,7.34,8.4
+Somerset,Raritan,"6,881",2.09,14.29,16.39,5.06,13.56
+Ocean,Barnegat Light,574,1.05,0,1.92,1.39,41.29
+Ocean,Ocean Gate,"2,011",1.34,0.2,6.36,6.12,13.53
+Morris,Washington Twp,"18,533",1.39,3.3,4.57,4.89,11.35
+Ocean,Ship Bottom,"1,156",1.3,0.43,9.17,3.2,28.81
+Sussex,Andover,606,1.16,2.15,7.59,4.79,12.05
+Bergen,Wyckoff,"16,696",0.56,4.23,4.41,4.96,16.63
+Monmouth,Eatontown,"12,709",12.41,8.67,12.36,5.91,13.96
+Essex,Nutley,"28,370",2.21,9.95,11.82,5.36,14.5
+Bergen,Park Ridge,"8,645",1.04,6.07,7.74,4.73,19.21
+Bergen,Westwood,"10,908",4.62,7.38,11.58,6.33,16.59
+Bergen,Ridgefield Park,"12,729",6.4,11.48,36.18,5.28,12.48
+Essex,Newark,"277,140",52.35,1.62,33.83,7.55,8.55
+Bergen,Wallington,"11,335",3.23,5.57,10.81,5.9,13.5
+Bergen,Rockleigh,531,2.07,1.51,3.77,1.88,57.06
+Monmouth,Farmingdale,"1,329",2.86,3.16,6.92,5.64,10.38
+Bergen,Saddle River,"3,152",2.09,9.42,5.14,3.59,24.46
+Monmouth,Englishtown,"1,847",2.6,6.82,8.01,5.04,10.12
+Burlington,Evesham,"45,538",4.19,6.16,3.39,5.59,13.09
+Monmouth,Highlands,"5,005",1.62,1.3,6.47,5.03,12.87
+Essex,Livingston,"29,366",2.26,19.21,4.06,5.69,16.83
+Essex,Glen Ridge,"7,527",5.04,4.65,5.01,7.29,9.54
+Monmouth,Freehold Twp,"36,184",5.34,7.03,7.76,4.77,12.98
+Burlington,Delran,"16,896",9.56,4.04,4.61,6.69,11.89
+Burlington,Burlington,"9,920",32.98,2.03,6.5,6.91,15.69
+Monmouth,Interlaken,820,0,0.49,1.71,3.29,26.59
+Essex,Montclair,"37,669",27.16,3.81,7.46,5.82,11.32
+Atlantic,Northfield,"8,624",3.24,4.5,8,4.84,16.06
+Burlington,Beverly,"2,577",29.88,0.78,9.16,7.06,11.33
+Monmouth,Holmdel,"16,773",0.86,19.16,3.7,4.43,16.33
+Essex,Maplewood,"23,867",35.3,3.04,6.68,7.75,10.99
+Bergen,Oradell,"7,978",0.68,11.26,4.98,5.06,16.58
+Essex,Caldwell,"7,822",3.32,4.72,10.05,4.63,16.07
+Monmouth,Lake Como,"1,759",6.14,1.19,18.31,5.46,10.52
+Essex,Bloomfield,"47,315",18.51,8.22,24.53,6.35,11.97
+Monmouth,Keansburg,"10,105",6.57,1.7,14.77,6.68,10.87
+Essex,Fairfield,"7,466",0.68,2.53,5.14,4.77,20.47
+Burlington,Mansfield,"8,544",10.42,7.69,5.01,4.35,27.88
+Burlington,Hainesport,"6,110",7.5,4.08,5.07,6.45,14.3
+Essex,East Orange,"64,270",88.51,0.72,7.93,7.24,11.78
+Monmouth,Little Silver,"5,950",0.29,1.75,3.01,6.12,15.76
+Sussex,Franklin,"5,045",2.18,1.74,7.83,5.53,13.06
+Sussex,Hampton Twp,"5,196",0.83,1.19,3.85,4,14.78
+Sussex,Byram,"8,350",1.47,2.14,4.99,5.47,10.1
+Sussex,Sparta,"19,722",1,2.49,5.34,5.5,11.14
+Burlington,Moorestown,"20,726",6.42,6,3.48,4.74,16.21
+Sussex,Wantage,"11,358",1.21,0.99,5.23,5.16,11.82
+Burlington,Pemberton Twp,"27,912",20.49,2.89,11.92,7.07,11.67
+Bergen,Teterboro,67,4.48,2.99,35.82,8.96,13.43
+Sussex,Hopatcong,"15,147",2.91,2.25,11.32,5.78,9.83
+Burlington,Chesterfield,"7,699",29.12,8.35,13.08,5.82,5.39
+Sussex,Newton,"7,997",4.88,2.98,12.34,6.04,18.52
+Warren,Phillipsburg,"14,950",7.49,1.53,11.82,7.58,13.21
+Warren,Hardwick,"1,696",0.94,0.65,3.95,4.25,12.56
+Ocean,Lakehurst,"2,654",10.81,2.11,13.07,7.35,6.97
+Warren,Harmony,"2,667",0.67,0.19,1.31,4.24,16.05
+Ocean,Lacey,"27,644",0.6,0.8,4.74,5.47,14.79
+Warren,Frelinghuysen,"2,230",0.63,0.54,2.56,3.72,17.76
+Union,Clark,"14,756",0.84,3.71,7.5,4.95,18.53
+Ocean,Jackson,"54,856",4.86,2.95,7.83,5.38,14.81
+Warren,Greenwich,"5,712",6.36,6.16,6.37,6.43,6.41
+Union,Fanwood,"7,318",5.3,6.75,6.26,7.83,13.95
+Ocean,Island Heights,"1,673",0.24,1.37,2.39,4.54,17.63
+Warren,Alpha,"2,369",2.41,1.52,5.28,5.91,15.62
+Warren,Blairstown,"5,967",1.12,1.14,3.79,4.61,15.5
+Ocean,Bay Head,968,0.52,0.72,1.03,2.58,34.4
+Gloucester,Harrison Twp,"12,417",3.83,3.38,3.01,6.58,8.38
+Mercer,Hopewell Twp,"17,304",2.1,8.89,3.31,4.62,14.15
+Gloucester,Greenwich,"4,899",4,0.76,2.35,5.31,18.02
+Ocean,Beach Haven,"1,170",0.34,0.77,9.91,2.05,25.04
+Mercer,Hopewell,"1,922",1.51,0.68,3.69,6.45,11.08
+Mercer,Hamilton,"88,464",11.78,3.29,10.87,5.18,15.78
+Gloucester,Franklin Twp,"16,820",7.18,1.27,4.49,5.45,10.51
+Mercer,East Windsor,"27,190",8.62,17.66,19.64,6.98,11.59
+Gloucester,East Greenwich,"9,555",5.86,3.61,3.02,8.48,10.54
+Ocean,Eagleswood,"1,603",0.87,0.62,3.37,4.68,13.54
+Ocean,Harvey Cedars,337,0.59,0.3,0.89,0.89,41.84
+Ocean,Beachwood,"11,045",1.79,1.5,8.13,6.42,9
+Ocean,Brick,"75,072",2,1.56,7.06,5.04,17.94
+Gloucester,Mantua,"15,217",2.5,1.1,2.95,5.12,12.78
+Essex,Orange,"30,134",71.83,1.51,21.67,7.75,11.16
+Middlesex,Dunellen,"7,227",8.62,4.51,26.75,6.25,9.67
+Middlesex,Cranbury,"3,857",3.45,13.74,2.57,3.5,16.65
+Mercer,West Windsor,"27,165",3.67,37.71,4.47,5.94,10.77
+Gloucester,Deptford,"30,561",12.16,4.45,5.99,6.14,15.04
+Essex,West Orange,"46,207",26.58,7.96,16.2,6.61,15.93
+Mercer,Robbinsville,"13,642",3.12,12.67,4.13,6.47,9.67
+Essex,West Caldwell,"10,759",1.26,3.91,4.86,5.12,19.46
+Essex,South Orange,"16,198",28.66,5.16,6.13,6.32,10.53
+Mercer,Pennington,"2,585",1.82,1.78,1.43,5.03,17.79
+Warren,Pohatcong,"3,339",1.59,0.9,3.47,5.87,14.94
+Warren,Washington,"6,461",6.01,3.42,8.5,6.42,10.56
+Warren,White,"4,882",2.03,0.76,2.74,3.2,28.88
+Morris,Chatham,"8,962",0.99,4.85,5.1,9.7,10.18
+Gloucester,Woodbury,"10,174",24.91,1.28,10.66,6.98,13.99
+Morris,Chatham Twp,"10,452",0.75,6.36,3.34,5.62,15.14
+Hudson,West New York,"49,708",4.6,6.01,78.08,7.43,11.95
+Morris,Chester Twp,"7,838",1.05,3.5,4.35,4.55,13.2
+Morris,Denville,"16,635",1.42,6.52,5.31,5.2,15.74
+Hunterdon,Milford,"1,233",0.24,0.97,2.19,5.6,15.98
+Morris,East Hanover,"11,157",0.83,11.92,5.38,4.28,19.26
+Ocean,Point Pleasant,"18,392",0.41,0.72,5.08,4.97,14.36
+Cumberland,Downe,"1,585",2.59,0.25,3.85,5.17,20.44
+Morris,Hanover,"13,712",1.01,10.8,4.59,5.11,18.13
+Ocean,Plumsted,"8,421",1.81,0.87,5.91,5.07,11.41
+Essex,Essex Fells,"2,113",1.09,2.18,1.99,5.68,16.14
+Morris,Harding,"3,838",0.99,2.66,3.49,3.62,20.97
+Gloucester,Elk,"4,216",14.78,0.64,5.1,6.45,12.03
+Ocean,Point Pleasant Beach,"4,665",0.84,0.84,9.02,3.47,17.53
+Gloucester,Pitman,"9,011",1.14,0.62,2.46,5.13,16.92
+Camden,Audubon Park,"1,023",0.29,0.29,2.05,3.32,26
+Camden,Lawnside,"2,945",88.83,1.43,4.38,5.06,17.28
+Cape May,Cape May,"3,607",4.85,0.67,8.62,4.52,27.64
+Hudson,Weehawken,"12,554",4.83,8.16,40.27,5.17,12.28
+Middlesex,Jamesburg,"5,915",8.84,4.53,22.38,8.54,8.47
+Hudson,Union City,"66,455",5.25,2.39,84.71,7.29,10.47
+Middlesex,Helmetta,"2,178",3.95,4.87,7.53,6.29,9.64
+Ocean,Lavallette,"1,875",0.11,0.53,2.99,1.71,40.37
+Hunterdon,Bloomsbury,870,1.03,1.84,4.02,7.01,9.2
+Ocean,Little Egg Harbor,"20,065",1.35,1.24,5.22,5.25,21.58
+Middlesex,Milltown,"6,893",1.23,3.37,6.46,5.76,14.84
+Hunterdon,Alexandria,"4,938",2,1.82,3.22,4.23,12.6
+Ocean,Long Beach,"3,051",0.26,0.49,4.13,2.16,40.05
+Middlesex,Metuchen,"13,574",4.88,12.96,6.89,6.4,13.84
+Ocean,Manchester,"43,070",3.84,1.78,4.79,2.67,50.15
+Ocean,Mantoloking,296,1.69,0.34,2.36,1.35,47.64
+Middlesex,Edison,"99,967",7.05,43.19,8.11,6.42,12.63
+Ocean,Ocean Twp,"8,332",0.59,1.08,2.76,4.22,24.45
+Ocean,Pine Beach,"2,127",0.38,1.41,3.71,4.51,16.6
+Middlesex,Sayreville,"42,704",10.71,16.12,12.31,6.55,12.14
+Hudson,East Newark,"2,406",1.91,7.81,61.39,6.57,7.27
+Gloucester,Woolwich,"10,200",9.97,6.02,3.58,9.12,6.37
+Hudson,Hoboken,"50,005",3.53,7.12,15.2,6.78,6.31
+Middlesex,North Brunswick,"40,742",17.47,24.27,17.73,7.27,9.28
+Hudson,Guttenberg,"11,176",4.8,7.32,64.83,6.45,11.35
+Middlesex,Monroe,"39,132",3.92,12.6,4.28,4.19,34.82
+Middlesex,Piscataway,"56,044",20.69,33.45,11.22,5.91,9.7
+Hudson,North Bergen,"60,773",4.04,6.55,68.4,6.29,13.47
+Middlesex,Perth Amboy,"50,814",10.54,1.69,78.1,7.88,9.26
+Hudson,Kearny,"40,684",5.37,4.41,39.95,5.48,10.72
+Morris,Mendham Twp,"5,869",1.29,3.41,3.6,4.34,12.52
+Morris,Morris Plains,"5,532",2.73,4.97,5.68,6.42,16.59
+Morris,Florham Park,"11,696",4.35,6.37,5.08,4.74,16.82
+Morris,Long Hill,"8,702",0.62,5.98,7.06,5.21,14.71
+Morris,Chester,"1,649",1.03,2.3,13.46,5.03,17.65
+Morris,Dover,"18,157",6.1,2.54,69.38,6.68,10.54
+Morris,Boonton,"8,347",4.82,10.05,11.02,6.6,13.15
+Morris,Butler,"7,539",1.11,3.02,11.41,5.88,13.2
+Morris,Mount Arlington,"5,050",2.32,3.58,8.22,4.69,20.42
+Morris,Mountain Lakes,"4,160",0.36,7.64,2.55,4.81,10.07
+Atlantic,Estell Manor,"1,735",0.92,1.61,1.04,4.27,11.07
+Atlantic,Galloway,"37,349",11.44,10.02,10.05,4.94,13.72
+Hunterdon,Flemington,"4,581",3.93,5.81,26.15,7.86,10.3
+Atlantic,Egg Harbor Twp,"43,323",9.58,11.76,13,6.31,10.78
+Hunterdon,Clinton Twp,"13,478",6.01,3.9,5.6,4.33,10.66
+Hunterdon,East Amwell,"4,013",1.25,1.42,2.82,3.09,14.15
+Hunterdon,Califon,"1,076",0.28,0.84,1.3,6.32,9.57
+Atlantic,Margate,"6,354",0.71,0.98,2.75,3.01,31.71
+Atlantic,Hammonton,"14,791",3,1.37,20.93,6.29,16
+Atlantic,Linwood,"7,092",0.97,3.79,2.96,4.55,18.12
+Union,Scotch Plains,"23,510",11.08,7.65,6.73,6.53,14.18
+Union,Summit,"21,457",4.52,6.38,13.29,6.81,11.85
+Warren,Belvidere,"2,681",1.57,0.78,3.62,5.41,12.38
+Union,Kenilworth,"7,914",2.91,3.84,15.52,5.07,15.58
+Warren,Franklin Twp,"3,176",1.48,2.33,3.84,4.72,12.15
+Morris,Roxbury,"23,324",2.34,5.77,8.93,5.36,12.6
+Union,New Providence,"12,171",1.27,9.78,6.43,7.19,13.91
+Union,Hillside,"21,404",53.19,2.73,17.63,6.32,11.82
+Union,Linden,"40,499",26.88,2.71,24.93,5.53,13.43
+Union,Roselle,"21,085",55.06,2.23,26.77,6.56,11.98
+Union,Mountainside,"6,685",1.97,4.94,6.09,5.45,23.71
+Union,Rahway,"27,346",30.93,4.3,23.52,5.89,13.5
+Union,Plainfield,"49,808",50.2,0.95,40.37,8.33,9.47
+Union,Springfield,"15,817",6.25,7.7,9.5,6.01,17.51
+Union,Roselle Park,"13,297",5.89,10.18,28.65,5.96,11.17
+Union,Westfield,"30,316",3.25,5.67,4.92,6.64,13.08
+Union,Union Twp,"56,642",28.98,10.6,14.94,5.44,14.04
+Warren,Hackettstown,"9,724",2.46,4.97,15.16,5.72,14.11
+Warren,Allamuchy,"4,323",1.78,2.73,4.49,4.53,17.53
+Atlantic,Weymouth,"2,715",4.75,0.88,4.57,3.79,27.15
+Bergen,Alpine,"1,849",2.38,26.07,4.81,4,19.09
+Bergen,Bergenfield,"26,764",7.7,25.6,26.52,6.54,13.03
+Bergen,Carlstadt,"6,127",2.38,8.23,18.02,5.35,15.34
+Atlantic,Mullica,"6,147",5.68,0.68,17.02,5.45,13.31
+Atlantic,Pleasantville,"20,249",45.94,2.42,41.06,8.35,10.66
+Atlantic,Port Republic,"1,115",0.63,0.9,2.96,5.29,12.65
+Atlantic,Ventnor,"10,650",4.25,8.68,18.05,4.89,19.91
+Morris,Pequannock,"15,540",0.48,1.94,4.52,4.35,24.87
+Bergen,Closter,"8,373",1.31,31.65,5.98,3.95,13.5
+Bergen,Cresskill,"8,573",0.73,27.64,6.26,4.34,17.36
+Warren,Mansfield,"7,725",4.89,3.21,10.94,6.03,12.75
+Warren,Oxford,"2,514",1.63,1.51,3.78,6.13,12.37
+Warren,Knowlton,"3,055",0.92,0.92,3.63,4.45,12.67
+Warren,Lopatcong,"8,014",6.03,4.18,5.99,5.52,18.08
+Atlantic,Buena,"4,603",9.43,1.78,29.42,6.58,14.19
+Atlantic,Buena Vista,"7,570",13.45,1.06,11.48,4.83,16.41
+Atlantic,Absecon,"8,411",9.89,7.93,7.5,5.53,17.01
+Atlantic,Atlantic City,"39,558",38.29,15.55,30.45,7.78,12.73
+Bergen,Dumont,"17,479",2.55,14.99,14.76,4.84,15.48
+Bergen,Englewood,"27,147",32.58,8.1,27.48,6.57,14.21
+Bergen,Englewood Cliffs,"5,281",2.08,38.52,5.98,4.77,24.09
+Bergen,East Rutherford,"8,913",4.5,13.93,17.54,5.52,13.46
+Bergen,Elmwood Park,"19,403",5.25,10.72,21.22,5.9,14.73
+Bergen,Garfield,"30,487",6.5,2.22,32.24,6.87,11.22
+Bergen,Hackensack,"43,010",24.44,10.3,35.31,6.45,12.36
+Monmouth,Roosevelt,882,0.91,3.17,5.9,5.67,13.72
+Bergen,Fairview,"13,835",2.94,4.63,54.63,6.4,12.04
+Monmouth,Sea Bright,"1,412",0.78,2.27,5.52,3.9,14.52
+Bergen,Franklin Lakes,"10,590",1.41,7.34,4.96,4.11,16.43
+Monmouth,Ocean Twp,"27,291",7.96,6.56,8.99,5.34,15.32
+Monmouth,Red Bank,"12,206",12.42,1.85,34.39,7.23,12.67
+Bergen,Harrington Park,"4,664",0.69,17.43,3.49,4.14,14.94
+Monmouth,Monmouth Beach,"3,279",0.34,0.73,1.89,3.93,21.5
+Monmouth,Neptune City,"4,869",10.62,4.46,10.08,5.2,15.34
+Warren,Independence,"5,662",1.22,2.23,5.42,5.55,10.86
+Monmouth,Marlboro,"40,191",2.09,17.27,4.03,5.06,11.31
+Warren,Hope,"1,952",1.18,1.59,4.1,4.56,14.7
+Monmouth,Middletown,"66,522",1.31,2.6,5.37,5.68,14.02
+Monmouth,Long Branch,"30,719",14.21,2.13,28.07,7.21,11.3
+Monmouth,Manasquan,"5,897",0.31,0.61,7.02,4.71,16.35
+Atlantic,Hamilton,"26,503",18.55,5.41,12.79,6.06,10.52
+Atlantic,Longport,895,0.34,0.45,1.12,1.34,37.65
+Atlantic,Somers Point,"10,795",10.68,3.08,9.49,5.97,14.61
+Monmouth,Sea Girt,"1,828",0,0.22,1.64,3.67,29.87
+Bergen,Allendale,"6,505",0.51,9.64,4.67,5.18,14.53
+Bergen,Bogota,"8,187",9.42,9.81,38.71,5.75,11.65
+Bergen,Cliffside Park,"23,594",3.29,13.78,28.41,5.97,17.51
+Bergen,Demarest,"4,881",0.64,26.41,4.43,4.32,14.42
+Bergen,Ho-Ho-Kus,"4,078",0.22,5.79,4.12,6.15,15.96
+Bergen,Haworth,"3,382",1.15,11.89,4.38,4.88,15.26
+Bergen,Leonia,"8,937",2.34,35.12,16.66,4.52,15.12
+Bergen,Lodi,"24,136",7.52,8.57,30.49,6.08,13.1
+Bergen,Lyndhurst,"20,554",1.98,6.59,18.34,5.38,15.66
+Bergen,Maywood,"9,555",5.34,10.98,18.68,6.04,15.66
+Bergen,Midland Park,"7,128",0.84,2.69,6.65,5.63,16.02
+Bergen,Moonachie,"2,708",1.4,10.04,24.37,4.28,16.17
+Bergen,New Milford,"16,341",3.72,19.39,13.63,5.17,15.78
+Bergen,Northvale,"4,640",1.06,24.01,8.15,4.61,14.63
+Monmouth,West Long Branch,"8,097",2.21,1.19,5.03,3.8,13.65
+Morris,Boonton Twp,"4,263",1.55,3.99,4.18,3.8,18.06
+Mercer,Princeton (as of 1/1/2013),"28,572",5.61,13.89,8.37,3.72,14.05
+Monmouth,Shrewsbury Twp,"1,141",14.29,6.57,14.11,5,17.97
+Atlantic,Corbin City,492,0.41,1.22,3.46,7.11,12.2
+Monmouth,Spring Lake Heights,"4,713",0.64,1.08,3.29,3.01,25.84
+Monmouth,Union Beach,"6,245",1.54,1.81,10.98,5.97,9.26
+Atlantic,Folsom,"1,885",4.19,0.85,6.74,4.62,11.14
+Monmouth,Upper Freehold,"6,902",2.01,4.35,3.68,5.13,13.97
+Atlantic,Egg Harbor,"4,243",17.94,2.22,26.28,6.79,11.81
+Passaic,Pompton Lakes,"11,097",1.41,5.39,10.89,5.55,12.67
+Passaic,North Haledon,"8,417",1.76,3.78,7.46,5.6,20.3
+Passaic,Wayne,"54,717",2.28,8.18,7.92,4.49,17.01
+Passaic,Ringwood,"12,228",1.36,1.74,5.78,5.63,11.34
+Ocean,Surf City,"1,205",1.33,0.58,5.06,2.24,38.59
+Ocean,Seaside Heights,"2,887",6.69,1.52,17.87,6.69,8.31
+Passaic,Haledon,"8,318",11.77,6.35,41.6,6.73,10.45
+Passaic,Bloomingdale,"7,656",1.14,2.46,9.33,5.62,14.84
+Salem,Elmer,"1,395",2.15,0.79,3.15,5.52,13.98
+Salem,Mannington,"1,806",21.1,0.44,8.19,4.71,17.44
+Hunterdon,Lebanon Twp,"6,588",1.68,1.47,3.11,3.96,15.16
+Hunterdon,Raritan Twp,"22,185",2.07,5.95,5.13,4.99,12.04
+Hunterdon,Kingwood,"3,845",0.65,1.09,2.39,4.5,12.9
+Hunterdon,Lebanon,"1,358",1.77,5.23,5.01,6.63,13.18
+Hunterdon,West Amwell,"3,840",13.39,1.46,4.84,3.62,11.38
+Hunterdon,Readington,"16,126",1.33,3.6,3.93,4.68,13.54
+Hunterdon,Tewksbury,"5,993",0.83,2.92,3.49,4,16.3
+Hunterdon,Hampton Boro,"1,401",2.5,1.86,5.35,5.28,13.42
+Hunterdon,High Bridge,"3,648",1.32,3.18,6,6.88,8.61
+Hunterdon,Frenchtown,"1,373",0.8,0.95,5.1,6.41,11.29
+Camden,Tavistock,5,0,0,0,0,60
+Camden,Winslow,"39,499",36.17,3.1,8.1,7.01,10.61
+Camden,Pine Hill,"10,233",24.07,2.12,6.74,7.53,8.72
+Camden,Somerdale,"5,151",18.99,6,8.19,5.53,15.32
+Cape May,Stone Harbor,866,1.62,0.12,3.35,2.31,41.57
+Cape May,Lower Township,"22,866",1.99,0.62,4.24,4.99,21.13
+Cape May,Ocean City,"11,701",3.5,0.71,5.5,3.15,29.66
+Cumberland,Hopewell,"4,571",6.58,0.57,7.33,4.48,20.65
+Cumberland,Commercial,"5,178",10.24,0.52,6.1,6.93,11.66
+Cape May,Wildwood Crest,"3,270",1.68,1.01,5.63,4.07,26.42
+Cape May,West Cape May,"1,024",8.69,0.2,4.98,2.54,28.52
+Burlington,Springfield,"3,414",3.81,2.55,3.72,3.46,13.27
+Burlington,Westampton,"8,813",25.45,6.9,8.84,6.38,10.37
+Burlington,Woodland,"1,788",8.11,0.84,4.81,4.53,10.46
+Camden,Berlin,"7,588",4.19,2.78,3.12,5.46,16.88
+Camden,Brooklawn,"1,955",5.32,2.2,6.29,6.65,11.2
+Camden,Chesilhurst,"1,634",46.39,0.86,11.57,4.22,19.71
+Camden,Gibbsboro,"2,274",2.15,2.33,4.09,5.76,14.82
+Camden,Gloucester Twp,"64,634",16.19,3.67,5.65,5.95,11.02
+Camden,Haddonfield,"11,593",1.11,1.85,2.14,5.96,14.98
+Camden,Oaklyn,"4,038",2.48,1.81,5.37,6.44,11.34
+Camden,Magnolia,"4,341",18.27,1.89,7.83,6.17,12.19
+Burlington,Riverton,"2,779",3.31,0.76,2.02,6.3,17.92
+Burlington,Pemberton,"1,409",15.26,3.26,12.7,6.53,13.27
+Burlington,Riverside,"8,079",6.39,0.95,11.34,6.98,10.52
+Burlington,North Hanover,"7,678",9.33,1.89,10.43,10.25,8.44
+Burlington,Palmyra,"7,398",14.54,1.84,5.37,6.54,13.15
+Burlington,Mount Laurel,"41,864",9.7,7.26,4.56,5.33,16.06
+Burlington,New Hanover,"7,385",33.57,2.04,20.96,2.33,3.74
+Burlington,Medford,"23,033",1.53,2.03,2.6,4.94,13.95
+Burlington,Mount Holly,"9,536",23.1,1.47,12.69,6.56,11.05
+Burlington,Southampton,"10,464",2.21,1.33,2.15,3.41,31.99
+Burlington,Shamong,"6,490",0.92,0.59,2.3,4.84,9.8
+Burlington,Medford Lakes,"4,146",0.46,0.96,1.69,6.13,14.74
+Hunterdon,Union Twp,"5,908",9.06,4.13,6.08,3.33,9.61
+Hunterdon,Stockton,538,0,0.93,0.56,5.58,18.03
+Hunterdon,Lambertville,"3,906",1.95,1.31,9.75,4.53,17.36
+Mercer,Lawrence,"33,472",10.76,14.1,7.48,5.47,13.78
+Mercer,Trenton,"84,913",52.01,1.19,33.71,7.95,8.76
+Mercer,Ewing,"35,790",27.62,4.3,7.62,4.17,14.74
+Mercer,Hightstown,"5,494",8.05,4.08,30.29,7.03,9.65
+Middlesex,Highland Park,"13,982",7.83,17.84,8.95,5.82,11.58
+Middlesex,Middlesex Borough,"13,635",5.13,6,16.47,5.53,13.81
+Middlesex,Carteret,"22,844",14.85,19.04,30.93,6.72,10.76
+Middlesex,East Brunswick,"47,512",3.98,22.8,6.7,4.61,13.52
+Hudson,Bayonne,"63,024",8.86,7.71,25.79,6.1,13.21
+Gloucester,Woodbury Heights,"3,055",3.4,1.64,2.42,5.37,13.58
+Hudson,Jersey City,"247,597",25.85,23.67,27.57,7.07,9.03
+Hudson,Harrison,"13,620",2.18,16.28,44.18,6.3,9.27
+Hudson,Secaucus,"16,264",4.11,20.4,18.6,5.36,15.6
+Hunterdon,Bethlehem,"3,979",0.98,1.88,4.02,4.25,9.7
+Hunterdon,Clinton,"2,719",1.32,6.66,6.22,6.18,11.55
+Hunterdon,Delaware,"4,563",0.66,0.92,2.45,3.59,16.11
+Hunterdon,Franklin Twp,"3,195",0.69,1.25,3.44,4.66,15.34
+Hunterdon,Glen Gardner,"1,704",1.76,1.82,5.28,3.76,8.8
+Hunterdon,Holland,"5,291",0.72,0.77,2.68,4.74,16.01
+Gloucester,Paulsboro,"6,097",36.72,0.71,8.89,8.07,11.45
+Gloucester,Newfield,"1,553",2.19,0.32,6.57,4.89,14.1
+Gloucester,National Park,"3,036",1.35,0.59,2.04,5.8,11.5
+Gloucester,Monroe,"36,129",14.01,2.42,4.97,6.41,13.57
+Gloucester,Logan,"6,042",12.5,2.55,3.97,6.27,6.75
+Gloucester,West Deptford,"21,677",6.52,1.91,3.37,5.35,14.37
+Gloucester,Westville,"4,288",4.9,1.49,6.02,5.62,11.64
+Gloucester,Washington Twp,"48,559",5.82,3.78,3.65,4.96,12.45
+Gloucester,Wenonah,"2,278",0.92,1.05,1.36,5.27,12.69
+Gloucester,South Harrison,"3,162",5.06,1.2,3.1,5.85,10.44
+Gloucester,Swedesboro,"2,584",15.02,1.35,17.07,7.66,10.02
+Essex,Millburn,"20,149",1.63,15.66,3.49,6.15,11.29
+Essex,Irvington,"53,926",85.41,0.87,10.6,7.86,8.95
+Cumberland,Upper Deerfield,"7,660",12.96,2.65,9.43,6.24,16.36
+Cumberland,Millville,"28,400",19.83,1.19,14.93,6.95,13.23
+Essex,Cedar Grove,"12,411",2.47,6.53,5.86,4.85,23.75
+Essex,Belleville,"35,926",9.12,12,39.34,6.1,11.87
+Essex,Roseland,"5,819",1.82,5.79,4.5,4.43,22.03
+Essex,Verona,"13,332",1.97,4.03,5.96,5.78,19.28
+Gloucester,Clayton,"8,179",18.01,1.8,5.95,7.07,10.25
+Gloucester,Glassboro,"18,579",18.67,2.87,7.42,5.74,10.66
+Essex,North Caldwell,"6,183",0.73,5.73,4.21,5.66,14.07
+Bergen,Woodcliff Lake,"5,730",0.82,6.47,5.41,4.92,16.39
+Sussex,Andover Twp,"6,319",3.37,2.6,5.14,4.89,16.02
+Bergen,Wood-Ridge,"7,626",1.43,7.13,13.11,4.93,14.73
+Somerset,Watchung,"5,801",3.45,12.69,5.29,4.52,21.12
+Bergen,Washington Twp,"9,102",1.08,6.47,5.44,5.39,19.94
+Bergen,Waldwick,"9,625",1.08,4.99,8.62,6.52,14.49
+Sussex,Green,"3,601",1.25,1.72,4.8,5.97,10.77
+Sussex,Fredon,"3,437",0.52,1.69,3.7,4.36,13.65
+Sussex,Frankford,"5,565",0.99,0.88,3.16,4.42,16.55
+Burlington,Bordentown,"3,924",10.12,2.73,5.81,5.66,13.46
+Burlington,Bass River,"1,443",0.28,0.76,3.12,4.92,12.96
+Sussex,Branchville,841,0.36,1.07,3.92,6.06,16.77
+Sussex,Lafayette,"2,538",1.58,0.75,5.08,3.9,12.81
+Sussex,Montague,"3,847",2.63,1.01,6.39,5.74,13.93
+Sussex,Hamburg,"3,277",2.01,2.04,6.87,7.11,11.75
+Sussex,Hardyston,"8,213",2.61,3.01,5.56,5.93,14.54
+Bergen,Tenafly,"14,488",0.88,26.22,5.36,5.02,13.48
+Bergen,Upper Saddle River,"8,208",1.44,10.09,4.33,5.08,13.13
+Bergen,Saddle Brook,"13,659",2.31,8.21,12.2,5.2,16.54
+Bergen,South Hackensack,"2,378",5.34,5.3,33.31,6.31,15.94
+Bergen,Ramsey,"14,473",0.65,6.66,5.98,5.38,12.73
+Bergen,Paramus,"26,342",1.42,22.28,7.26,3.99,21.88
+Bergen,Ridgewood,"24,958",1.59,12.99,5.27,6.21,12.47
+Somerset,Branchburg,"14,459",2.25,8.4,4.45,5.82,11.05
+Bergen,Ridgefield,"11,032",1.2,29.06,21.41,5.11,14.31
+Bergen,Rochelle Park,"5,530",2.89,8.72,16.35,5.17,19.93
+Somerset,Franklin Twp,"62,300",26.55,19.98,12.92,6.96,13.66
+Bergen,River Vale,"9,659",0.7,8.42,4.98,4.99,15.87
+Somerset,Bridgewater,"44,464",2.38,17.83,6.76,5.56,14.65
+Somerset,Millstone,418,1.2,1.67,3.59,6.7,16.03
+Bergen,Rutherford,"18,061",2.92,13.08,14.08,5.1,13.52
+Somerset,Hillsborough,"38,303",4.59,12.38,7.55,5.74,9.28
+Somerset,Montgomery,"22,254",2.84,25.61,4.57,4.75,9.89
+Somerset,Peapack Gladstone,"2,582",4.07,1.94,10.88,4.61,12.01
+Somerset,Rocky Hill,682,1.47,2.35,4.84,4.4,18.48
+Somerset,Somerville,"12,098",12.15,11.37,23.75,6.94,10.99
+Somerset,Warren,"15,311",1.52,15.07,5.36,4.3,13.45
+Bergen,Oakland,"12,754",0.89,4.17,5.34,5.32,14.17
+Bergen,Old Tappan,"5,750",0.73,22.24,5.01,3.76,16.14
+Bergen,Palisades Park,"19,622",1.96,57.84,18.22,6.41,11.37
+Monmouth,Wall,"26,164",2.44,1.61,3.47,4.62,17.08
+Monmouth,Tinton Falls,"17,892",9.34,4.67,6.25,5.02,25.56
+Monmouth,Spring Lake,"2,993",0.27,1,1.9,4.74,27.43
+Monmouth,Rumson,"7,122",0.25,1.26,2.43,6.09,11.35
+Monmouth,Oceanport,"5,832",3,1.59,4.05,4.85,16.08
+Monmouth,Neptune Twp,"27,935",38.56,2.26,9.33,5.15,16.46
+Monmouth,Millstone Twp,"10,566",3.59,4.51,5.48,4.25,8.14
+Monmouth,Howell,"51,075",3.65,4.52,8.13,5.72,10
+Monmouth,Matawan,"8,810",7.04,6.41,10.77,6.8,11.66
+Monmouth,Loch Arbour,194,1.55,1.55,3.61,3.09,15.46
+Monmouth,Keyport,"7,240",7.2,2.38,18.26,6.09,15.79
+Monmouth,Hazlet,"20,334",1.48,3.4,7.87,4.99,14.58
+Monmouth,Freehold,"12,052",12.57,2.89,42.87,8.2,11
+Monmouth,Fair Haven,"6,121",2.5,1.08,2.7,7.6,9.57
+Cumberland,Bridgeton,"25,349",35.49,0.6,43.58,9.95,7.15
+Cape May,Woodbine,"2,472",24.72,0.73,23.22,6.8,13.19
+Monmouth,Bradley Beach,"4,298",4.96,1.81,19.54,4.93,13.96
+Cumberland,Fairfield,"6,295",47.53,0.44,12.84,4.4,13.2
+Monmouth,Avon By The Sea,"1,901",0.32,0.63,3.73,2.63,23.93
+Cumberland,Deerfield,"3,119",12.06,1.35,14.08,5.45,13.18
+Monmouth,Allentown,"1,828",4.43,1.53,3.56,4.1,11.38
+Monmouth,Aberdeen,"18,210",11.87,6.43,10.43,6.74,10.59
+Cumberland,Lawrence,"3,290",9.24,0.4,11.37,6.14,10.94
+Middlesex,South River,"16,008",7.13,4.84,18.2,6.27,11.83
+Cumberland,Greenwich,804,3.73,0.5,2.61,4.85,18.03
+Sussex,Vernon,"23,943",1.39,0.78,6.41,5,8.43
+Middlesex,South Brunswick,"43,417",7.71,35.91,6.04,5.69,9.37
+Sussex,Sussex,"2,130",1.92,2.3,7.93,5.82,12.25
+Burlington,Maple Shade,"19,131",9.54,5.65,8.32,5.97,13.22
+Union,Berkeley Heights,"13,183",1.49,10.43,5.12,5.73,17.45
+Sussex,Walpack,16,0,0,0,12.5,25
+Burlington,Fieldsboro,540,12.59,2.04,2.78,6.11,10.56
+Sussex,Ogdensburg,"2,410",0.33,1.83,6.27,5.6,11.41
+Burlington,Edgewater Park,"8,881",27.32,3.19,10.92,6.05,15.8
+Sussex,Stanhope,"3,610",1.58,2.33,8.5,5.79,10.36
+Burlington,Lumberton,"12,559",18.93,4.71,5.86,6.31,10.45
+Sussex,Sandyston,"1,998",0.4,0.55,3.4,5.26,11.71
+Burlington,Florence,"12,109",12.23,5.04,4.76,6.08,12.67
+Burlington,Burlington Twp,"22,594",27.98,7.04,7.05,6.21,12.03
+Burlington,Cinnaminson,"15,569",5.49,2.38,3.07,4.7,18.23
+Burlington,Delanco,"4,283",10.97,1.87,3.55,5.58,16.09
+Burlington,Eastampton,"6,069",16.97,4.48,8.29,5.42,8.73
+Union,Cranford,"22,625",2.62,2.84,6.51,5.68,17.18
+Union,Elizabeth,"124,969",21.08,2.08,59.5,7.96,9.19
+Union,Garwood,"4,226",1.06,2.04,8.83,5.18,15.19
+Burlington,Bordentown Twp,"11,367",10.7,10.57,6.02,7.37,10.62
+Cumberland,Maurice River,"7,976",36.03,0.35,11.52,2.38,7.02
+Cumberland,Shiloh,516,1.74,0.19,4.07,5.43,15.5
+Cumberland,Stow Creek,"1,431",4.47,0.28,4.4,5.17,17.61
+Cumberland,Vineland,"60,724",14.16,1.71,38.03,6.97,13.93
+Middlesex,New Brunswick,"55,181",16.04,7.6,49.93,7.17,5.17
+Middlesex,Plainsboro,"22,999",8.03,46.22,6.21,6.18,7.48
+Morris,Parsippany-Troy Hills,"53,238",3.52,29.09,8.32,5.69,13.71
+Morris,Randolph,"25,734",2.68,10.46,10.17,5.69,9.24
+Cape May,Dennis,"6,467",0.79,0.56,1.81,3.97,14.97
+Cape May,Middle Township,"18,911",10.41,1.79,5.09,5.03,19.01
+Cape May,Avalon,"1,334",0.3,0.22,2.17,2.4,40.48
+Cape May,Cape May Point,291,2.75,0.34,0.34,0.34,55.67
+Camden,Woodlynne,"2,978",33.55,9.7,38.28,7.56,6.15
+Cape May,Wildwood,"5,325",11.15,0.79,31.21,7.68,13.52
+Cape May,West Wildwood,603,1.49,0,2.65,4.64,27.69
+Cape May,Upper Township,"12,373",0.58,0.74,2.36,5.14,14.27
+Cape May,Sea Isle City,"2,114",0.09,0.19,2.41,2.51,32.31
+Cape May,North Wildwood,"4,041",1.14,0.35,4.03,3.93,30.56
+Ocean,South Toms River,"3,684",19.33,0.62,19.49,6.6,8.82
+Ocean,Seaside Park,"1,579",0.95,0.38,3.42,2.85,26.73
+Morris,Rockaway Twp,"24,156",2.55,6.67,11.2,5.53,14.14
+Morris,Rockaway,"6,438",3.22,7.66,15.07,5.42,12.26
+Passaic,Clifton,"84,136",4.92,8.9,31.92,6.13,13.92
+Ocean,Tuckerton,"3,347",0.75,1.05,6.07,6.42,17.6
+Ocean,Toms River,"91,239",2.7,3.58,7.93,5.05,17.3
+Ocean,Stafford,"26,535",1.05,1.48,5.31,4.79,19.64
+Morris,Kinnelon,"10,248",0.91,4.26,4.08,4.26,12.18
+Camden,Laurel Springs,"1,908",3.46,1,3.88,5.82,12.05
+Camden,Lindenwold,"17,613",34.66,2.8,20.85,8.33,9.4
+Camden,Merchantville,"3,821",13.01,2.28,11.62,7.07,12.88
+Camden,Mount Ephraim,"4,676",2.14,0.68,5.33,5.62,13.96
+Camden,Waterford,"10,649",4.83,1.16,4.39,5.75,9.87
+Camden,Voorhees,"29,131",8.7,16.13,3.43,4.58,16.53
+Morris,Netcong,"3,232",3.9,2.78,17.7,5.14,13.61
+Camden,Pine Valley,12,0,0,16.67,0,0
+Camden,Pennsauken,"35,885",26.87,7.72,26.91,6.15,12.87
+Camden,Stratford,"7,040",8.24,4.22,6.49,5.71,14.3
+Camden,Runnemede,"8,468",4.72,2.63,6.09,5.79,14.66
+Morris,Madison,"15,845",2.96,5.51,8.87,5.92,14.24
+Morris,Lincoln Park,"10,521",1.83,7.38,9.59,5.09,15.9
+Morris,Mine Hill,"3,651",4.6,4.96,23.01,5.61,12.24
+Morris,Mendham,"4,981",1.02,2.05,2.71,5.22,18.99
+Morris,Morris Twp,"22,306",5.65,5.12,7.55,6,17.44
+Morris,Montville,"21,528",1.28,18.07,4.18,4.93,14.55
+Morris,Mount Olive,"28,117",5.74,8.23,11.51,6.41,9
+Morris,Morristown,"18,411",13.97,4.34,34.09,5.84,11.46
+Salem,Oldmans,"1,773",7.73,0.9,6.99,5.92,13.42
+Salem,Pennsville,"13,409",1.54,1.42,3.07,5.37,15.59
+Salem,Elsinboro,"1,036",3.47,0.39,2.22,4.54,20.37
+Salem,Lower Alloways Creek,"1,770",1.36,0.17,1.53,4.75,17.29
+Camden,Berlin Twp,"5,357",11.57,5.13,8.29,6.31,14.08
+Camden,Camden,"77,344",48.07,2.12,47.04,9.21,7.55
+Camden,Bellmawr,"11,583",2.46,5.86,7.68,5.59,17.02
+Camden,Gloucester City,"11,456",3.07,2.68,6.7,6.4,12.8
+Camden,Collingswood,"13,926",9.11,2.2,9.67,6.25,13.5
+Camden,Clementon,"5,000",19.12,2.1,10.3,6.88,11.04
+Camden,Cherry Hill,"71,045",6.14,11.69,5.64,5.29,17.71
+Camden,Hi-Nella,870,15.06,4.02,10.57,6.44,9.31
+Camden,Haddon Twp,"14,707",1.5,2.71,3.95,5.9,17.24
+Camden,Haddon Heights,"7,473",1.12,1.31,2.65,6.18,15.99
+Somerset,Bernardsville,"7,707",0.88,3.27,11.72,5.92,12.21
+Somerset,Bernards Twp,"26,652",1.89,13.8,3.95,5.21,13.46
+Salem,Woodstown,"3,505",11.44,1.17,5.56,5.42,14.49
+Salem,Salem,"5,146",62.13,0.39,6.68,8.53,12.46
+Salem,Quinton,"2,666",12.9,0.38,4.01,5.96,16.24
+Salem,Pilesgrove,"4,016",5.93,0.92,2.59,4.26,20.99
+Passaic,Hawthorne,"18,791",2.27,2.82,15.42,5.76,14.4
+Passaic,Little Falls,"14,432",4.11,4.56,9.89,3.6,13.01
+Passaic,Passaic,"69,781",10.64,4.36,71.02,9.9,7.75
+Somerset,Bedminster,"8,165",2.06,8.68,6.36,4.89,14.07
+Somerset,South Bound Brook,"4,563",10.1,6.14,27.28,7.25,8.92
+Warren,Washington Twp,"6,651",2.5,1.91,4.39,5.26,12.98
+Sussex,Stillwater,"4,099",0.66,0.71,2.2,4.32,11.2
+Burlington,Washington Twp,687,1.89,0.15,9.02,4.37,14.99
+Burlington,Tabernacle,"6,949",1.38,0.69,2.76,4.37,11.18
+Burlington,Wrightstown,802,21.07,5.99,28.05,7.98,7.86
+Burlington,Willingboro,"31,629",72.74,2.01,8.65,5.76,15.93
+Camden,Barrington,"6,983",5.13,1.69,5.44,6.2,15.81
+Camden,Audubon,"8,819",1.44,1.13,3.29,6.13,13.2
+Passaic,Woodland Park,"11,819",4.23,4.2,20.66,5.77,17.62
+Passaic,West Milford,"25,850",1.4,1.29,5.85,5.4,12.61
+Salem,Carneys Point,"8,049",16.91,0.81,11.18,5.75,18.74
+Passaic,Prospect Park,"5,865",19.86,3.21,52.09,7.3,8.17
+Passaic,Paterson,"146,199",31.68,3.34,57.63,8.02,8.9
+Passaic,Wanaque,"11,116",3.07,4.65,9.67,5.22,18.16
+Passaic,Totowa,"10,804",2.3,5.92,14.35,5.04,18.02

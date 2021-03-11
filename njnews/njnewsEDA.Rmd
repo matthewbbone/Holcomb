@@ -1,11 +1,11 @@
 ---
-title: "NJ News Exploratory Data Analysis"
+title: "NJ News Network and NJ Databook Merger"
 author: "Matthew Bone"
 date: "3/9/2021"
 output: 
   html_document:
-    fig_height: 3
-    fig_width: 5
+    fig_height: 6
+    fig_width: 8
   pdf_document:
     fig_height: 3
     fig_width: 5
@@ -23,6 +23,7 @@ library(stringr)
 library(data.table)
 library(DT)
 library(corrplot)
+set.seed(1)
 
 knitr::opts_chunk$set(
   tidy=FALSE,     # display code as typed
@@ -85,7 +86,7 @@ cmb_data <- local %>%
   left_join(nodes, by='label') %>%
   left_join(census, by=c('municipal','county')) %>%
   left_join(voting, by=c('municipal','county')) %>%
-  left_join()
+  left_join(budget, by=c('municipal','county'))
 ```
 
 ### Sample of Nodes Dataset
@@ -119,29 +120,45 @@ cmb_data %>%
   datatable(rownames = F)
 ```
 
+### Correlation Matrix (Municipality-Level)
+
+This matrix includes a select group of network metrics and NJ Databooks metrics that provide some interesting starting points for understanding how network effects may interact with municipal characteristics. The network metrics are the mean of all the outlets in a given municipality. 
+
 ```{r, include=FALSE, warning=FALSE}
-cmb_data %>%
+corr_matrix <- cmb_data %>%
   group_by(municipal, county) %>%
   mutate(registered_perc = as.double(registered_perc),
          democrats_perc = as.double(democrats_perc),
-         republicans_perc = as.double(republicans_perc)) %>%
+         republicans_perc = as.double(republicans_perc),
+         muni_budget_pc = as.double(muni_budget_pc),
+         muni_budget = as.double(muni_budget)) %>%
   summarize(oulet_count = as.double(n()),
-            weighted_indegree = sum(weighted_indegree, na.rm = T),
-            weighted_outdegree = sum(weighted_outdegree, na.rm = T),
-            eccentricity = sum(eccentricity, na.rm = T),
-            authority = sum(authority, na.rm = T),
-            hub = sum(hub, na.rm = T),
+            weighted_indegree = mean(weighted_indegree, na.rm = T),
+            weighted_outdegree = mean(weighted_outdegree, na.rm = T),
+            eccentricity = mean(eccentricity, na.rm = T),
+            authority = mean(authority, na.rm = T),
+            hub = mean(hub, na.rm = T),
             population,
             perc_asian,
+            perc_black,
+            perc_hispanic,
+            registered_perc,
             democrats_perc,
             republicans_perc,
-            turnout) %>%
+            voter_turnout,
+            muni_budget_pc,
+            muni_budget) %>%
   ungroup() %>%
   unique() %>%
   select(-c(municipal, county)) %>%
-  cor(use="complete.obs") %>%
+  cor(use="complete.obs")
+```
+
+```{r, echo=FALSE}
+corr_matrix %>%
   corrplot(tl.col = 'black', tl.srt = 60)
 ```
+
 
 
 

@@ -241,16 +241,17 @@ increase18_20 <- kl18 %>%
          perc19 = round(perc19*100, 2),
          perc20 = round(perc20*100, 2),
          perc21 = round(perc21*100, 2),
-         freq_incr = round(perc20 / perc18, 2))
+         freq_incr = round(perc20 / perc18, 2),
+         freq_incr2 = round(perc20 / perc19, 2))
 
 growers <- increase18_20 %>%
-  arrange(-freq_incr) %>%
+  arrange(-freq_incr2) %>%
   head(15)
 ```
 
 ```{r, echo=FALSE}
 increase18_20 %>%
-  arrange(-freq_incr) %>%
+  arrange(-freq_incr2) %>%
   kable(format = 'markdown')
 ```
 

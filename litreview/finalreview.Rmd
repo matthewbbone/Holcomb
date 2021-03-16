@@ -1,0 +1,188 @@
+---
+title: "Keyword Literature Review"
+author: "Matthew Bone"
+date: "3/14/2021"
+output: 
+  html_document:
+    fig_height: 3
+    fig_width: 5
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+  word_document:
+    fig_height: 3
+    fig_width: 5
+---
+
+```{r, setup, include=FALSE}
+require(mosaic)   # Load additional packages here 
+knitr::opts_chunk$set(
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+```
+
+The field of journalism studies is rapidly changing in pace with the development of communications technology and our shifting sociopolitical environment. In order to capture a holistic view of this dynamic landscape, this review used a keyword analysis of all the articles published since 2018 in the journals [Political Communication](https://www.tandfonline.com/toc/upcp20/current), [Journalism](https://journals.sagepub.com/home/jou), [Journalism Studies](https://www.tandfonline.com/toc/rjos20/current), [Digital Journalism](https://www.tandfonline.com/toc/rdij20/current), [Journalism & Mass Media Quarterly](https://journals.sagepub.com/home/jmq), [International Journal of Press & Politics](https://journals.sagepub.com/home/hij/), and [New Media & Society](https://journals.sagepub.com/home/nms). 
+
+This review uses the data collected from the analysis to inform the Knight Foundation's research program on Trust, Media, and Democracy. In this report, there's a particular focus on the institution's and practice of journalism and news media. The main findings from the keyword analysis are as follows:
+
+1. "Social Media" is the most commonly used keyword (labeling 15.7% of all papers collected), even more so than "journalism" (12.1%) which goes to show the abundant research focused on these technology platforms in recent years.
+
+2. Among methodological keywords, "content analysis" is the most commonly used keyword at 4.7% of all articles, followed by "survey" (1.8%) and "comparative research" (1.4%). 
+
+3. Keywords that are most relevant to Trust, Media, and Democracy that are growing in popularity year-to-year include "audience studies" which went from .2% of all articles in 2018 to being used to label 1.1% of all articles in 2020, as well as "epistemology" (.3% to 1.9%), "public opinion" (.6% to 2.1%), "populism" (.6% to 1.9%), "journalists" (.9% to 2.4%), "digital journalism" (1.7% to 4.1%), "local journalism" (.5% to 1.1%), "trust" (.5% to 1.1%), and "political journalism" (.6% to 1.3%). (There were others but only ones that have >1% of articles in 2020 are included).
+
+4. The three keywords from the above list that have the sharpest increase from 2019 to 2020 include "epistemology" (.58% to 1.9%), "audience studies" (.58% to 1.1%), and "journalists" (1.4% to 2.4%). This may be a leading indicator of growing interest. 
+
+In order to better understand these potential trends, this review will dive into the articles from each year that have these trend keywords to see what the common strand in research may be. 
+
+### Epistemology Articles
+
+**2018 Articles:**
+
+Barnhurst, Kevin G. and Andrew W. Nightingale, "Time, realism, news" *Journalism* (2018)
+
+Reich, Zvi, "The decline in orally negotiated news: Revisiting (again) the role of technology in reporting" *New Media & Society* (2018)
+
+**2019 Articles:**
+
+Barnoy, Aviv and Zvi Reich, "The When" *Journalism Studies* (2019)
+
+Carlson, Matt, "News Algorithms" *Digital Journalism* (2019)
+
+Soffer, Oren, "Assessing the climate of public opinion in the user comments era: A new epistemology" *Journalism* (2019)
+
+**2020 Articles:**
+
+Duffy, Andrew, Rich Ling, Nuri Kim, Edson Tandoc Jr., and Oscar Westlund, "News: Mobiles" *Digital Journalism* (2020)
+
+Borges-Rey, Eddy, "Towards an epistemology of data journalism in the devolved nations of the United Kingdom: Changes and continuities in materiality, perfomrativity and reflexivity" *Journalism* (2020)
+
+Coddington, Mark, "Gathering Evidence of evidence: News aggregation as an epistemological practice" *Journalism* (2020)
+
+Rom, Shelly and Zvi Reich. "Between the technological hare and journalistic tortoise: Minimization of knowledge claims on online news flashes" *Journalism* (2020)
+
+Ekstrom, Mats, Seth C. Lewis, and Oscar Westlund, "Epistemologies of digitial journalism and the study of misinformation" *New Media & Society* (2020) 
+
+Godler, Yigal, Zvi Reich, and Boaz Miller, "Social epistemology as a new paradigm for journalism and media studies" *New Media & Society* (2020)
+
+Carlson, Matt, "Journalistic epistemology and digital news circulation: Infrastructure, circulation practices, and epistemic contests" *New Media & Society* (2020)
+
+Usher, Nikki, "News cartography and epistemic authority in the era of big data: Journalists as map-makers, map-users, and map-subjects" *New Media & Society* (2020)
+
+Kligler-Vilenchik, Neta, Ori Tenenboim, "Sustained journalist–audience reciprocity in a meso news-space: The case of a journalistic WhatsApp group" *New Media & Society* (2020)
+
+Matheson, Donald, Karin Wahl-Jorgensen, "The epistemology of live blogging" *New Media & Society* (2020)
+
+**2021 Articles:**
+
+Ekström, Mats, Amanda Ramsälv, Oscar Westlund "The Epistemologies of Breaking News" *Journalism Studies* (2021)
+
+### Audience Studies Articles
+
+**2018 Articles:**
+
+Swart, Joëlle, Chris Peters, and Marcel Broersma, "Shedding light on the dark social: The connective role of news and journalism in social media communities" *New Media & Society* (2018)
+
+**2019 Articles:**
+
+Swart, Joëlle, Chris Peters, and Marcel Broersma, "Sharing and Discussing News in Private Social Media Groups" *Digital Journalism* (2019)
+
+Peters, Chris, and Marcel Broersma, "Fusion cuisine: A functional approach to interdisciplinary cooking in journalism studies" *Journalism* (2019)
+
+Picone, Ike, Jelena Kleut, Tereza Pavlíčková, Bojana Romic, Jannie Møller Hartley, and Sander De Ridder, "Small acts of engagement: Reconnecting productive audience practices with everyday agency" *New Media & Society* (2019)
+
+**2020 Articles:**
+
+Costera Meijer, Irene, "Understanding the Audience Turn in Journalism: From Quality Discourse to Innovation Discourse as Anchoring Practices 1995–2020", *Journalism Studies* (2020)
+
+Kormelink, Tim Groot, and Irene Costera Meijer "A User Perspective on Time Spent: Temporal Experiences of Everyday News Use" *Journalism Studies* (2020)
+
+Amazeen, Michelle A, and Bartosz W Wojdynski, "The effects of disclosure format on native advertising recognition and audience perceptions of legacy and online news publishers" *Journalism* (2020)
+
+Graván, María Lamuedra, Concha Mateos, and Manuel A Broullón-Lozano, "The role of public service journalism and television in fostering public voice and the capacity to consent: An analysis of Spanish viewers’ discourses" *Journalism* (2020)
+
+Price, John, "How to feed The Ferret: Understanding subscribers in the search for a sustainable model of investigative journalism" *Journalism* (2020)
+
+Mitchelstein Eugenia, Pablo J Boczkowski, Keren Tenenboim-Weinblatt, Kaori Hayashi, Mikko Villi, and Neta Kligler-Vilenchik, "Incidentality on a continuum: A comparative conceptualization of incidental news consumption" *Journalism*
+
+**2021 Articles:**
+
+Aharoni, Tali, Neta Kligler-Vilenchik, Keren Tenenboim-Weinblatt, "'Be Less of a Slave to the News': A Texto-Material Perspective on News Avoidance among Young Adults" *Journalism Studies* (2021)
+
+### Journalists Articles
+
+**2018 Articles:**
+
+Tandoc Jr., Edson C., "Gatekeeping Influences and Journalistic Capital" *Journalism Studies* (2018)
+
+Vossen, Mirjam, Baldwin van Gorp, and Lau Schulpen, "Thinking and Writing About Global Poverty" *Journalism Studies* (2018)
+
+Beam, Randal A., Sue Lockett John, and Michael Mead Yaqub, "We Don’t Cover Suicide…(Except When We Do Cover Suicide)" *Journalism Studies* (2018)
+
+Bentivegna, Sara, and Rita Marchetti, "Journalists at a crossroads: Are traditional norms and practices challenged by Twitter?" *Journalism* (2018)
+
+Livio, Oren, and Jonathan Cohen, "‘Fool me once, shame on you’: Direct personal experience and media trust" *Journalism* (2018)
+
+Tandoc Jr., Edson C., and Bruno Takahashi, "Journalists are humans, too: A phenomenology of covering the strongest storm on earth" *Journalism* (2018)
+
+**2019 Articles:**
+
+Cohen, Nicole S., "At Work in the Digital Newsroom" *Digital Journalism* (2019)
+
+Post, Senja, and Hans Mathias Kepplinger, "Coping with Audience Hostility. How Journalists’ Experiences of Audience Hostility Influence Their Editorial Decisions" *Journalism Studies* (2019)
+
+Henkel, Imke, Neil Thurman, and Veronika Deffner, "Comparing Journalism Cultures in Britain and Germany: Confrontation" *Journalism Studies* (2019)
+
+Plaut, Shayna, and Peter Klein, "'Fixing' the Journalist-Fixer Relationship: A Critical Look Towards Developing Best Practices in Global Reporting" *Journalism Studies* (2019)
+
+Simon, Felix M., "What Determines a Journalist’s Popularity on Twitter?" *Journalism Studies* (2019)
+
+Maurer, Peter, "In the grip of politics? How political journalists in France and Germany perceive political influence on their work" *Journalism* (2019)
+
+Aharoni, Tali, and Keren Tenenboim-Weinblatt, "Unpacking Journalists’ (Dis)Trust: Expressions of Suspicion in the Narratives of Journalists Covering the Israeli-Palestinian Conflict" *The International Journal of Press & Politics* (2019)
+
+**2020 Articles:**
+
+Wiebke Loosen, Julius Reimer, Sascha Hölig, "What Journalists Want and What They Ought to Do (In)Congruences Between Journalists’ Role Conceptions and Audiences’ Expectations" *Journalism Studies* (2020)
+
+Sergio Splendore, Luigi Curini, "Proximity Between Citizens and Journalists as a Determinant of Trust in the Media. An Application to Italy" *Journalism Studies* (2020)
+
+Lukas P. Otto, Isabella Glogger, "Expanding the Methodological Toolbox: Factorial Surveys in Journalism Research" *Journalism Studies* (2020)
+
+Amy Schmitz Weiss, "Journalists and Their Perceptions of Location: Making Meaning in the Community" *Journalism Studies* (2020)
+
+Nicole Gesualdo, Matthew S. Weber, Itzhak Yanovitzky, "Journalists as Knowledge Brokers" *Journalism Studies* (2020)
+
+Seth C. Lewis, Rodrigo Zamith, Mark Coddington, "Online Harassment and Its Implications for the Journalist–Audience Relationship" *Digital Journalism* (2020)
+
+Jennifer R. Henrichsen, "Breaking Through the Ambivalence: Journalistic Responses to Information Security Technologies" *Digital Journalism* (2020)
+
+Ever Josue Figueroa, "News organizations, ideology, and work routines: A multi-level analysis of environmental journalists" *Journalism* (2020)
+
+Johana Kotisova, "When the crisis comes home: Emotions, professionalism, and reporting on 22 March in Belgian journalists’ narratives" *Journalism* (@020)
+
+Michael Mead Yaqub, Randal A Beam, Sue Lockett John, "‘We report the world as it is, not as we want it to be’: Journalists’ negotiation of professional practices and responsibilities when reporting on suicide" *Journalism* (2020)
+
+Ulrika Hedman, "Making the most of Twitter: How technological affordances influence Swedish journalists’ self-branding" *Journalism* (2020)
+
+Lea Stahel, Constantin Schoen, "Female journalists under attack? Explaining gender differences in reactions to audiences’ attacks" *New Media & Society*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+---
+title: "Chosen Sample"
+author: "Matthew Bone"
+date: "3/15/2021"
+output: 
+  html_document:
+    fig_height: 3
+    fig_width: 5
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+  word_document:
+    fig_height: 3
+    fig_width: 5
+---
+
+```{r, setup, include=FALSE}
+library(readr)
+library(kableExtra)
+library(tidyverse)
+library(ggformula)
+library(scales)
+library(cld3)
+library(stringr)
+knitr::opts_chunk$set(
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+```
+
+```{r, include=FALSE}
+chosen <- read_csv('chosensamp.csv')
+```
+
+```{r, include=FALSE}
+n_entries <- chosen %>%
+  nrow()
+
+n_dom <- chosen %>%
+  select(domain) %>%
+  unique() %>%
+  nrow()
+
+n_url <- chosen %>%
+  select(url) %>%
+  unique() %>%
+  nrow()
+```
+
+## Quick Numbers
+
+Number of Articles: `r n_entries`
+
+Number of Unique Domains: `r n_dom`
+
+Number of Unique URLs: `r n_url`
+
+```{r, echo=FALSE}
+chosen %>% head() %>% as_tibble()
+```
+
+## Counts by Date and Domain
+
+```{r, echo=FALSE, warning=FALSE}
+chosen %>%
+  group_by(date, domain) %>%
+  summarize(n = n()) %>%
+  arrange(-n)
+```
+
+## Date Distribution
+
+```{r, echo=FALSE}
+chosen %>%
+  gf_bar(~date)
+```
+
+```{r}
+
+```
+
+
+
+
+

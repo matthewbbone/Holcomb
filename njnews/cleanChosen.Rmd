@@ -194,6 +194,8 @@ samp
 
 ## Counts by Domain
 
+The counts for newbrunswicktoday.com and www.newbrunswicktoday.com match the counts in 12706-fullurls.txt. However, www.newarkblack.com is not present in the 12706-fullurls.txt file. Since www.mypaperonline.com was filtered by '/category/the-morristown-news', we can't compare webpage count to what's in 12706-fullurls.txt.
+
 ```{r, include=FALSE}
 counts <- all_dates %>%
   group_by(domain) %>%

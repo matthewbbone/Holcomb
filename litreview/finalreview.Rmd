@@ -1,7 +1,7 @@
 ---
 title: "Keyword Literature Review"
 author: "Matthew Bone"
-date: "3/14/2021"
+date: "3/21/2021"
 output: 
   html_document:
     fig_height: 3
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 
 The field of journalism studies is rapidly changing in pace with the development of communications technology and our shifting sociopolitical environment. In order to capture a holistic view of this dynamic landscape, this review used a keyword analysis of all the articles published since 2018 in the journals [Political Communication](https://www.tandfonline.com/toc/upcp20/current), [Journalism](https://journals.sagepub.com/home/jou), [Journalism Studies](https://www.tandfonline.com/toc/rjos20/current), [Digital Journalism](https://www.tandfonline.com/toc/rdij20/current), [Journalism & Mass Media Quarterly](https://journals.sagepub.com/home/jmq), [International Journal of Press & Politics](https://journals.sagepub.com/home/hij/), and [New Media & Society](https://journals.sagepub.com/home/nms). 
 
-This review uses the data collected from the analysis to inform the Knight Foundation's research program on Trust, Media, and Democracy. In this report, there's a particular focus on the institution's and practice of journalism and news media. The main findings from the keyword analysis are as follows:
+This review uses the data collected from the analysis to inform the Knight Foundation's research program on Trust, Media, and Democracy. In this report, there's a particular focus on the institutions and practice of journalism and news media. The main findings from the keyword analysis are as follows:
 
 1. "Social Media" is the most commonly used keyword (labeling 15.7% of all papers collected), even more so than "journalism" (12.1%) which goes to show the abundant research focused on these technology platforms in recent years.
 
@@ -33,7 +33,32 @@ This review uses the data collected from the analysis to inform the Knight Found
 
 4. The three keywords from the above list that have the sharpest increase from 2019 to 2020 include "epistemology" (.58% to 1.9%), "audience studies" (.58% to 1.1%), and "journalists" (1.4% to 2.4%). This may be a leading indicator of growing interest. 
 
-In order to better understand these potential trends, this review will dive into the articles from each year that have these trend keywords to see what the common strand in research may be. 
+In order to better understand these potential trends, this review will highlight the themes of the articles that are labeled with "epistemology", "audience studies", and "journalists" respectively. Hopefully, this provides some insight to some growing areas of interest in journalism studies. 
+
+## Epistemology
+
+The increasing use of the keyword "epistemology" reflects an increasing interest in the process journalists and news institutions use to obtain and verify information. There is a particular focus on how this increasingly digitized process alters the practice of journalism, and in some cases undermines its authority. 
+
+A prominent scholar in this line of thought is Zvi Reich. Their recent publications look at the pros and cons of digital methodologies in journalistic sourcing and verification (Reich, 2018) and the external influences on journalists due to the increasingly splintered digital news ecosystem (Rom & Reich, 2020). A common concern is the ability of journalists to verify information in the modern context (Barnoy & Reich, 2019; Carlson, 2019) and how this affects their authority as knowledge sources. In order to study these effects, there are calls for new theoretical models that pull from the field of social epistemology (Godler, Reich, & Miller, 2020) and other epistemological and systems theories (Carlson, 2020). Another varied but prominent area of research is on the external pressures of the new digital ecosystem on the practices of journalism (Duffy, Ling, Kim, Tandoc, & Westlund, 2020; Usher, 2020), such as how it pressure to report quickly undermines the verification process (Rom & Reich, 2020; Ekstrom, Ramsalv & Westlund, 2021).
+
+## Audience Studies
+
+The papers in this group are varied without a clear line of research that connects them. However, they seem to reflect a growing interest in understanding the audience as active participants in the journalistic process rather than as a passive recipient of journalism as a service. 
+
+Some papers discuss how news and journalism help shape the online social interactions of their audience (Swart, Peters, & Broersma, 2018; Swart, Peters, & Broersma, 2019). Others recommend increasingly audience-focused scholarship in journalism studies (Peters & Broersma, 2019) or recount the shift of journalism to being audience-centered from it's early days as content-centered (Costera Meijer, 2020). Some investigate the intentionality of news users (Mitchelstein, Boczkowski, Tenenboim-Weinblatt, Hayashi, Villi, and Kligler-Vilenchik, 2020; Aharoni, Kligler-Vilenchik, & Tenenboim-Weinblatt, 2020). Lastly, some focus on how journalism can empower its audience (Picone, Kleut, Pavlíčková, Romic, Hartley, & DeRidder, 2019) or or how the audience can support journalism (Price, 2020).
+
+## Journalists
+
+This group of papers are varied but most can be broadly categorized into three themes of investigation:
+
+1. How Journalists are influenced by political/social/cultural forces (Bentivegna & Marchetti, 2018; Tandoc, 2018; Vossen, van Gorp, & Schulpen, 2018; Beam, John, & Yaqub, 2018; Maurer, 2019; Henkel, Thurman, & Deffner, 2019): There are two comparative studies that contrast how journalists have different priorities across countries (Maurer, 2019; Henkel, Thurman, & Deffner, 2019). The rest look at a variety of social, political, or value-based influences on journalists.
+
+2. The experiences of journalists as subjects, not just mediators (Tandoc & Takahashi, 2018; Cohen, 2019; Plaut & Klein, 2019; Aharoni & Tenenboim-Weinblatt, 2019): For instance, there was a paper on the trauma of reporting on a natural disaster (Tandoc & Takahashi, 2018), one on the labor conditions of digital journalists (Cohen, 2019), one on the relationship between fixers and international journalists (Plaut & Klein, 2019), and one on mutual distrust between journalists and sources in reporting conflicts (Aharoni & Tenenboim-Weinblatt, 2019). 
+
+3. Journalists relationship with their audiences (Livio & Cohen, 2018; Post & Kepplinger, 2019; Simon, 2019; Splendore & Curini, 2020; Gesualdo, Weber, & Yanovitzky, 2020; Lewis, Zamith, & Coddington, 2020; Loosen, Reimer, & Holig, 2020): There were two on how journalists cope with audience hostility (Post & Kepplinger, 2019; Lewis, Zamith, & Coddington, 2020) and three on ways the relationship between journalists and their audience can affect trust in the journalist (Livio & Cohen, 2018; Loosen, Reimer, & Holig, 2020; Splendore & Curini, 2020). 
+
+
+## Articles
 
 ### Epistemology Articles
 
@@ -45,17 +70,17 @@ Reich, Zvi, "The decline in orally negotiated news: Revisiting (again) the role 
 
 **2019 Articles:**
 
-Barnoy, Aviv and Zvi Reich, "The When" *Journalism Studies* (2019)
+Barnoy, Aviv and Zvi Reich, "The When, Why, How and So-What of Verifications" *Journalism Studies* (2019)
 
-Carlson, Matt, "News Algorithms" *Digital Journalism* (2019)
+Carlson, Matt, "News Algorithms, Photojournalism and the Assumption of Mechanical Objectivity in Journalism" *Digital Journalism* (2019)
 
 Soffer, Oren, "Assessing the climate of public opinion in the user comments era: A new epistemology" *Journalism* (2019)
 
 **2020 Articles:**
 
-Duffy, Andrew, Rich Ling, Nuri Kim, Edson Tandoc Jr., and Oscar Westlund, "News: Mobiles" *Digital Journalism* (2020)
+Duffy, Andrew, Rich Ling, Nuri Kim, Edson Tandoc Jr., and Oscar Westlund, "News: Mobiles, Mobilities and Their Meeting Points" *Digital Journalism* (2020)
 
-Borges-Rey, Eddy, "Towards an epistemology of data journalism in the devolved nations of the United Kingdom: Changes and continuities in materiality, perfomrativity and reflexivity" *Journalism* (2020)
+Borges-Rey, Eddy, "Towards an epistemology of data journalism in the devolved nations of the United Kingdom: Changes and continuities in materiality, performativity and reflexivity" *Journalism* (2020)
 
 Coddington, Mark, "Gathering Evidence of evidence: News aggregation as an epistemological practice" *Journalism* (2020)
 
@@ -159,7 +184,7 @@ Jennifer R. Henrichsen, "Breaking Through the Ambivalence: Journalistic Response
 
 Ever Josue Figueroa, "News organizations, ideology, and work routines: A multi-level analysis of environmental journalists" *Journalism* (2020)
 
-Johana Kotisova, "When the crisis comes home: Emotions, professionalism, and reporting on 22 March in Belgian journalists’ narratives" *Journalism* (@020)
+Johana Kotisova, "When the crisis comes home: Emotions, professionalism, and reporting on 22 March in Belgian journalists’ narratives" *Journalism* (2020)
 
 Michael Mead Yaqub, Randal A Beam, Sue Lockett John, "‘We report the world as it is, not as we want it to be’: Journalists’ negotiation of professional practices and responsibilities when reporting on suicide" *Journalism* (2020)
 

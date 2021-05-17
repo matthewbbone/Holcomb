@@ -1,7 +1,7 @@
 ---
 title: "Chosen Sample"
 author: "Matthew Bone"
-date: "3/15/2021"
+date: "5/4/2021"
 output: 
   html_document:
     fig_height: 3
@@ -14,29 +14,41 @@ output:
     fig_width: 5
 ---
 
-This report takes a look the chosen sample from 12706-fulltext.txt. The sample includes all webpages that are from the domains below and from the dates below.
+This report takes a look the chosen sample from 12706-fulltext.txt. The sample includes webpages that are from the domains below and from the dates below. In a post extraction step, "mypaperonline" webpages were filtered for if they have "category/the-morristown-news" or if webpage's HTML has an article object that is labeled with "cateogry-the-morristown-news" or "category-morristown-digital-edition".
 
 **Domains filtered on:**
 
-'https://www.mypaperonline.com' (filtered by '/category/the-morristown-news' in a post-extraction step)
+'https://www.mypaperonline.com' 
 
 'https://www.newbrunswicktoday.com'
 
 'https://www.newarkblack.com'
 
-'http://www.mypaperonline.com' (filtered by '/category/the-morristown-news' in a post-extraction step)
+'http://www.mypaperonline.com'
 
 'http://www.newbrunswicktoday.com'
 
 'http://www.newarkblack.com'
 
-'mypaperonline.com' (filtered by '/category/the-morristown-news' in a post-extraction step)
+'https://mypaperonline.com' 
+
+'https://newbrunswicktoday.com'
+
+'https://newarkblack.com'
+
+'http://mypaperonline.com'
+
+'http://newbrunswicktoday.com'
+
+'http://newarkblack.com'
+
+'mypaperonline.com'
 
 'newbrunswicktoday.com'
 
 'newarkblack.com'
 
-'www.mypaperonline.com' (filtered by '/category/the-morristown-news' in a post-extraction step)
+'www.mypaperonline.com'
 
 'www.newbrunswicktoday.com'
 
@@ -68,8 +80,6 @@ This report takes a look the chosen sample from 12706-fulltext.txt. The sample i
 
 '20191004' *None*
 
-**Important Findings: ** There don't seem to be any webpages from these three sources on 10/13, 11/04, 9/27, 10/02, or 10/03 in the dataset. Additionally, there are too few pages from www.mypaperonline.com/category/the-morristown-news for useful analysis.
-
 ```{r, setup, include=FALSE}
 library(readr)
 library(kableExtra)
@@ -84,7 +94,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r, include=FALSE}
-chosen <- read_csv('chosensamp.csv')
+chosen <- read_csv('final_chosen.csv')
 ```
 
 ```{r, include=FALSE}
@@ -156,10 +166,10 @@ chosen %>%
 
 # Filtered by Domains but not Dates
 
-I additionally extracted all data from the given websites (filtered on domain list above) to see if there's a significant amount of data to be used on other dates. It nearly doubles the count of the web pages in the sample but there's still very little data from www.mypaperonline.com/category/the-morristown-news. 
+I additionally extracted all data from the given websites (filtered on domain list above) to see if there's a significant amount of data to be used on other dates.
 
 ```{r, include=FALSE}
-all_dates <- read_csv('all_dates.csv')
+all_dates <- read_csv('final_chosen_alldates.csv')
 ```
 
 ```{r, include=FALSE}
@@ -195,8 +205,6 @@ samp
 ```
 
 ## Counts by Domain
-
-The counts for newbrunswicktoday.com and www.newbrunswicktoday.com match the counts in 12706-fullurls.txt. However, www.newarkblack.com is not present in the 12706-fullurls.txt file. Since www.mypaperonline.com was filtered by '/category/the-morristown-news', we can't compare webpage count to what's in 12706-fullurls.txt.
 
 ```{r, include=FALSE}
 counts <- all_dates %>%

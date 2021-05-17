@@ -1,0 +1,65 @@
+---
+title: "Untitled"
+author: ""
+date: ""
+output: 
+  html_document:
+    fig_height: 3
+    fig_width: 5
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+  word_document:
+    fig_height: 3
+    fig_width: 5
+---
+
+```{r, setup, include=FALSE}
+library(readr)
+library(kableExtra)
+library(tidyverse)
+library(ggformula)
+library(scales)
+library(cld3)
+library(stringr)
+
+knitr::opts_chunk$set(
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+```
+
+```{r, include=FALSE}
+cleaned <- read_csv('chosen2.csv')
+chosen <- read_csv('final_chosen.csv')
+```
+
+```{r, echo=FALSE}
+cleaned %>%
+  group_by(domain, cleaned) %>%
+  summarize(n = n())
+```
+
+```{r}
+test = 'https://www.newbrunswicktoday.com/series/Rutgers-Athletics-Scandals'
+```
+
+
+```{r}
+chosen %>%
+  filter(url == test) %>%
+  select(domain, text, url) %>%
+  kable()
+```
+
+```{r}
+cleaned %>%
+  filter(url == test) %>%
+  select(domain, text, url) %>%
+  kable()
+```
+
+
+
+
+
+

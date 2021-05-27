@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\matth\\anaconda3\\envs\\holcombEnv\\python.exe"
+    "python.pythonPath": "C:\\Users\\matth\\anaconda3\\envs\\holcombEnv\\python.exe",
+    "git.ignoreLimitWarning": true
 }

@@ -1,4 +1,5 @@
 import time as tm
+from numpy.lib.utils import source
 import pandas as pd
 import re
 import random as rnd
@@ -19,6 +20,7 @@ def get_sample(n, datesfile, domainsfile, sourcefile, outputcsv) -> str:
 
     datelist = []
 
+    print('parsing', datesfile, '...')
     with open(datesfile, 'rb') as dates:
 
         line = dates.readline()
@@ -31,6 +33,7 @@ def get_sample(n, datesfile, domainsfile, sourcefile, outputcsv) -> str:
 
     domainlist = []
 
+    print('parsing', domainsfile, '...')
     with open(domainsfile, 'rb') as domains:
 
         line = domains.readline()
@@ -42,9 +45,8 @@ def get_sample(n, datesfile, domainsfile, sourcefile, outputcsv) -> str:
 
     # initialize dataframe
     data = pd.DataFrame(columns = ['date','domain','url','text'])
-    print(datelist)
-    print(domainlist)
 
+    print('extracting from', sourcefile, '...')
     # open 12706-fulltext.txt file for reading
     with open(sourcefile, 'rb') as raw:
 
@@ -64,8 +66,6 @@ def get_sample(n, datesfile, domainsfile, sourcefile, outputcsv) -> str:
 
             ctr = ctr + 1
 
-        print(line)
-
     # take time difference
     total = tm.time() - start
 
@@ -82,10 +82,12 @@ def get_sample(n, datesfile, domainsfile, sourcefile, outputcsv) -> str:
         sample = data.sample(n)
     else:
         sample = data
-    print('extracted ' + str(len(sample)) + ' articles in ' + str(round(total)) + ' seconds')
-    print('ctr: ', ctr)
+
     print("random sample:")
     print(sample)
+    print('extracted', str(len(sample)), 'articles in', str(round(total)), 'seconds')
+    print('lines searched:', ctr)
+    print('output to:', outputcsv)
     sample.to_csv(outputcsv, index=False)
 
 if __name__ == '__main__':

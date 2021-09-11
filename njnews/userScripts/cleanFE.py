@@ -1,11 +1,13 @@
 from newspaper import Article
 from datetime import datetime as dt
 import multiprocessing as mp
+from numpy.lib.utils import source
 import pandas as pd
 import time as tm
 import requests
 from bs4 import BeautifulSoup
 import click
+import warnings
 
 RESULT = []
 def overwrite(info):
@@ -83,8 +85,11 @@ def scrape_home(info):
 
 def run(sourcecsv, outputcsv) -> str:
 
+    warnings.filterwarnings("ignore")
+
     start = tm.time()
 
+    print('opening', sourcecsv, '...')
     chosen = pd.read_csv(sourcecsv)
     chosen['title'] = None
     chosen['published'] = None
@@ -103,10 +108,12 @@ def run(sourcecsv, outputcsv) -> str:
         chosen.loc[index, 'url'] = home
         home_list.append([index, home, row.date])
 
+    print('starting parallel webscraping...')
     search_pool = mp.Pool(mp.cpu_count())
     s = search_pool.map_async(scrape_home, home_list)
     s.wait()
     results = s.get()
+    print('finished parallel processing')
         
     res_dict = {}
     for r in results:
@@ -128,11 +135,12 @@ def run(sourcecsv, outputcsv) -> str:
         except: ''
 
     span = tm.time() - start
-    print('completed in ', span, ' seconds')
     print(chosen)
-    chosen.to_csv(outputcsv)
+    print('completed in ', round(span), ' seconds')
     print('length: ', len(res_dict), '  original: ', len(chosen))
     print('errors: ', len(chosen) - len(res_dict))
+    print('output to: ', outputcsv)
+    chosen.to_csv(outputcsv)
     
 if __name__ == '__main__':
     run()

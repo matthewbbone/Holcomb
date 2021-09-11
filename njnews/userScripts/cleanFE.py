@@ -5,6 +5,7 @@ import pandas as pd
 import time as tm
 import requests
 from bs4 import BeautifulSoup
+import click
 
 RESULT = []
 def overwrite(info):
@@ -76,29 +77,15 @@ def scrape_home(info):
 
     return ret
 
-    
+@click.command(context_settings=dict(ignore_unknown_options=True))
+@click.option('--sourcecsv', default='randsamp.csv', help='The source file to be cleaned (def: randsamp.csv)')
+@click.option('--outputcsv', default='cleansamp.csv', help='The output file that has been cleaned (def: cleansamp.csv)')
 
-if __name__ == '__main__':
+def run(sourcecsv, outputcsv) -> str:
 
     start = tm.time()
 
-    # 10: 11
-    # 50: 78
-    # 100: 85
-    # 200: 71
-    # 500: 187
-    # 1000: 325
-    # 2000: 577
-    #
-    # w/o Social Media
-    # 10: 4
-    # 50: 17
-    # 100: 30
-    # 200: 54
-    # 500: 122
-    # 1000: 256
-    # 2000: 500
-    chosen = pd.read_csv('randsamp.csv')
+    chosen = pd.read_csv(sourcecsv)
     chosen['title'] = None
     chosen['published'] = None
     chosen['author'] = None
@@ -143,11 +130,12 @@ if __name__ == '__main__':
     span = tm.time() - start
     print('completed in ', span, ' seconds')
     print(chosen)
-    chosen.to_csv('pp_fe.csv')
+    chosen.to_csv(outputcsv)
     print('length: ', len(res_dict), '  original: ', len(chosen))
     print('errors: ', len(chosen) - len(res_dict))
     
-
+if __name__ == '__main__':
+    run()
 
 
 

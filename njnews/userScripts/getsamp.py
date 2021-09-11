@@ -5,11 +5,11 @@ import random as rnd
 import click
 
 @click.command(context_settings=dict(ignore_unknown_options=True))
-@click.option('--n', default=10, help='The sample size')
-@click.option('--datesfile' , default='dates.txt', help='The file that contains a list of target dates')
-@click.option('--domainsfile' , default='domains.txt', help='The file that containst a list of target domains')
-@click.option('--sourcefile', default='12706-fulltext.txt', help='The source file to extract the sample from')
-@click.option('--outputcsv', default='randsamp.csv', help='The output file with the extracted sample')
+@click.option('--n', default=10, help='The sample size (def: 10)')
+@click.option('--datesfile' , default='dates.txt', help='File that has a list of dates (def: dates.txt)')
+@click.option('--domainsfile' , default='domains.txt', help='File that has a list of domains (def: domains.txt)')
+@click.option('--sourcefile', default='12706-fulltext.txt', help='Raw text file (def: 12706-fulltext.txt)')
+@click.option('--outputcsv', default='randsamp.csv', help='File to output the sample (def: randsamp.csv)')
 
 def get_sample(n, datesfile, domainsfile, sourcefile, outputcsv) -> str:
 
@@ -24,8 +24,10 @@ def get_sample(n, datesfile, domainsfile, sourcefile, outputcsv) -> str:
         line = dates.readline()
 
         while line:
-            datelist.append(line.decode('UTF-8')[:-2])
+            datelist.append(line.decode('UTF-8'))
             line = dates.readline()
+
+    datelist = [date[:-2] for date in datelist][:-1] + [datelist[-1]]
 
     domainlist = []
 
@@ -33,9 +35,10 @@ def get_sample(n, datesfile, domainsfile, sourcefile, outputcsv) -> str:
 
         line = domains.readline()
         while line:
-            domainlist.append(line.decode('UTF-8')[:-2])
+            domainlist.append(line.decode('UTF-8'))
             line = domains.readline()
 
+    domainlist = [domain[:-2] for domain in domainlist][:-1] + [domainlist[-1]]
 
     # initialize dataframe
     data = pd.DataFrame(columns = ['date','domain','url','text'])
@@ -46,10 +49,10 @@ def get_sample(n, datesfile, domainsfile, sourcefile, outputcsv) -> str:
     with open(sourcefile, 'rb') as raw:
 
         # read first line
-        line = raw.readline()
+        # line = raw.readline()
         ctr = 0
 
-        while line:
+        for line in raw:
             
             key = line.decode('UTF-8').split(',', 3)
             key[0] = re.sub('[^0-9]', '', key[0])
@@ -57,9 +60,11 @@ def get_sample(n, datesfile, domainsfile, sourcefile, outputcsv) -> str:
                 data = data.append({'date': key[0], 'domain': key[1], 'url': key[2], 'text': key[3]}, ignore_index=True)      
                 
             # read next line
-            line = raw.readline()
+            # line = raw.readline()
 
             ctr = ctr + 1
+
+        print(line)
 
     # take time difference
     total = tm.time() - start
